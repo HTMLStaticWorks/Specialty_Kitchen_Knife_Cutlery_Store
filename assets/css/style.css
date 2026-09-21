@@ -624,7 +624,7 @@ img, video {
   height: calc(100vh - var(--header-height));
   background-color: var(--bg-card);
   border-top: 1px solid var(--border-color);
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 1.75rem 3rem 1.25rem;
   overflow-y: auto;
   overflow-x: hidden;
   transform: translateX(-100%);
@@ -632,6 +632,16 @@ img, video {
   z-index: 1010;
   display: flex;
   flex-direction: column;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.mobile-nav-drawer::-webkit-scrollbar,
+.mobile-nav-drawer *::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 .mobile-nav-drawer.active {
@@ -647,6 +657,7 @@ img, video {
   min-height: 100%;
   justify-content: space-between;
   overflow-x: hidden;
+  padding-right: 0.5rem;
 }
 
 .mobile-drawer-footer {
@@ -691,6 +702,16 @@ img, video {
   text-decoration: none;
   min-width: 0;
   word-break: break-word;
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--accent-brass) !important;
+}
+
+.mobile-nav-link.active i.bi-chevron-down {
+  color: var(--accent-brass);
 }
 
 .mobile-subnav {
@@ -730,15 +751,23 @@ img, video {
   white-space: nowrap;
 }
 
-.mobile-subnav-link:hover {
-  color: var(--accent-brass);
-  background-color: var(--bg-secondary);
+.mobile-subnav-link:hover,
+.mobile-subnav-link.active {
+  color: var(--accent-brass) !important;
+  background-color: var(--accent-brass-light);
+  font-weight: 600;
   padding-left: 0.85rem;
 }
 
-[dir="rtl"] .mobile-subnav-link:hover {
+[dir="rtl"] .mobile-subnav-link:hover,
+[dir="rtl"] .mobile-subnav-link.active {
   padding-left: 0.6rem;
   padding-right: 0.85rem;
+}
+
+.mobile-subnav-link.active .dropdown-tag {
+  background-color: var(--accent-brass);
+  color: #121316;
 }
 
 /* ==========================================================================
@@ -809,12 +838,18 @@ img, video {
   position: absolute;
   bottom: 24px;
   right: 24px;
-  background-color: var(--color-graphite);
+  background-color: #16181A;
   color: #FFFFFF;
   padding: 0.75rem 1.25rem;
   border-left: 2px solid var(--accent-brass);
   font-family: var(--font-mono);
   font-size: 0.75rem;
+}
+
+[data-theme="dark"] .hero-image-tag {
+  background-color: #181A1D;
+  color: #FFFFFF;
+  border-left-color: var(--accent-brass);
 }
 
 /* Home 2 Split Hero */
@@ -951,10 +986,16 @@ img, video {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.3rem 0.6rem;
-  background-color: var(--color-graphite);
+  background-color: #16181A;
   color: #FFFFFF;
   border-left: 2px solid var(--accent-brass);
   z-index: 2;
+}
+
+[data-theme="dark"] .knife-card-badge {
+  background-color: #181A1D;
+  color: #FFFFFF;
+  border-left-color: var(--accent-brass);
 }
 
 .knife-card-body {
@@ -1130,13 +1171,15 @@ img, video {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   overflow: hidden;
-  height: 220px;
+  aspect-ratio: 4/3;
+  width: 100%;
 }
 
 .craft-step-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* ==========================================================================
@@ -1439,7 +1482,7 @@ img, video {
   bottom: 2rem;
   right: 2rem;
   padding: 1.25rem 2rem;
-  background-color: var(--color-graphite);
+  background-color: #16181A;
   color: #FFFFFF;
   border-left: 4px solid var(--accent-brass);
   box-shadow: var(--shadow-lg);
@@ -1451,6 +1494,12 @@ img, video {
   transform: translateY(100px);
   opacity: 0;
   transition: all var(--transition-normal);
+}
+
+[data-theme="dark"] .toast-notice {
+  background-color: #181A1D;
+  color: #FFFFFF;
+  border-left-color: var(--accent-brass);
 }
 
 .toast-notice.show {
@@ -1763,13 +1812,18 @@ textarea:focus-visible {
   }
 
   .craft-step {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+    grid-template-columns: 60px 1fr;
+    gap: 1.25rem 1.5rem;
+    align-items: start;
   }
 
   .craft-step-media {
-    order: -1;
-    height: 200px;
+    grid-column: 1 / -1;
+    order: 3;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    max-height: 360px;
   }
 
   .product-info-panel {
@@ -1793,7 +1847,8 @@ textarea:focus-visible {
 @media (min-width: 768px) and (max-width: 1024.98px) {
   .curated-lines-section .row,
   .culinary-companions-section .row,
-  .metallurgy-matrix-section .row {
+  .metallurgy-matrix-section .row,
+  .foundations-care-section .row {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
@@ -1801,7 +1856,8 @@ textarea:focus-visible {
 
   .curated-lines-section .row > [class*="col-"],
   .culinary-companions-section .row > [class*="col-"],
-  .metallurgy-matrix-section .row > [class*="col-"] {
+  .metallurgy-matrix-section .row > [class*="col-"],
+  .foundations-care-section .row > [class*="col-"] {
     flex: 0 0 50% !important;
     max-width: 50% !important;
     width: 50% !important;
@@ -1810,7 +1866,8 @@ textarea:focus-visible {
   /* When there is an odd number of items, center the last item */
   .curated-lines-section .row > [class*="col-"]:last-child:nth-child(odd),
   .culinary-companions-section .row > [class*="col-"]:last-child:nth-child(odd),
-  .metallurgy-matrix-section .row > [class*="col-"]:last-child:nth-child(odd) {
+  .metallurgy-matrix-section .row > [class*="col-"]:last-child:nth-child(odd),
+  .foundations-care-section .row > [class*="col-"]:last-child:nth-child(odd) {
     flex: 0 0 50% !important;
     max-width: 50% !important;
     width: 50% !important;

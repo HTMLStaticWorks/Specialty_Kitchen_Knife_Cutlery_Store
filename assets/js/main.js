@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initRTLSystem();
   initStickyHeader();
   initMobileNavigation();
+  highlightActiveNavLinks();
   initProductFiltering();
   initProductGallery();
   initLightbox();
@@ -126,6 +127,7 @@ function initMobileNavigation() {
       icon.className = isActive ? 'bi bi-x-lg' : 'bi bi-list';
     }
     document.body.style.overflow = isActive ? 'hidden' : '';
+    document.documentElement.style.overflow = isActive ? 'hidden' : '';
   });
 
   // Mobile sub-dropdown accordions
@@ -152,6 +154,60 @@ function initMobileNavigation() {
       const icon = toggleBtn.querySelector('i');
       if (icon) icon.className = 'bi bi-list';
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    }
+  });
+}
+
+/* ==========================================================================
+   3B. ACTIVE NAVIGATION HIGHLIGHTING
+   ========================================================================== */
+function highlightActiveNavLinks() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+  // Desktop Navigation Links
+  const desktopLinks = document.querySelectorAll('.desktop-nav .nav-link-custom, .desktop-nav .dropdown-link');
+  desktopLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    const page = href.split('?')[0].split('#')[0];
+
+    if (page === currentPath || (currentPath === '' && page === 'index.html')) {
+      link.classList.add('active');
+      const parentNavItem = link.closest('.nav-item');
+      if (parentNavItem) {
+        const topNavLink = parentNavItem.querySelector('.nav-link-custom');
+        if (topNavLink) topNavLink.classList.add('active');
+      }
+    }
+  });
+
+  // Mobile Drawer Navigation Links
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-subnav-link');
+  mobileLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    const page = href.split('?')[0].split('#')[0];
+
+    let isMatch = (page === currentPath) || (currentPath === '' && page === 'index.html');
+    if (currentPath === 'product-details.html' && page === 'products.html') isMatch = true;
+    if (currentPath === 'collection-details.html' && page === 'collections.html') isMatch = true;
+    if (currentPath === 'care-details.html' && page === 'care-guide.html') isMatch = true;
+
+    if (isMatch) {
+      link.classList.add('active');
+      if (link.classList.contains('mobile-subnav-link')) {
+        const parentSubnav = link.closest('.mobile-subnav');
+        if (parentSubnav) {
+          parentSubnav.classList.add('show');
+          const toggleLink = parentSubnav.previousElementSibling;
+          if (toggleLink && toggleLink.classList.contains('mobile-nav-link')) {
+            toggleLink.classList.add('active');
+            const icon = toggleLink.querySelector('.bi-chevron-down');
+            if (icon) icon.style.transform = 'rotate(180deg)';
+          }
+        }
+      }
     }
   });
 }
