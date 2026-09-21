@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialty Culinary Collections - STEEL & GRAIN</title>
+  <meta name="description" content="Explore our specialized culinary cutlery lines: Japanese Craft, Professional Kitchen, Everyday Essentials, Heritage Forge, Chef's Selection, and Complete Sets.">
+  <meta name="keywords" content="kitchen knife collections, japanese knife series, chef cutlery sets, heritage knives">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="STEEL & GRAIN - Specialty Culinary Collections">
+  <meta property="og:description" content="Precision cutlery collections crafted for distinct cooking styles, cutting techniques, and kitchen environments.">
+  <meta property="og:image" content="assets/images/santoku/atelier-santoku-180.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & MANDATORY NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="STEEL & GRAIN Home">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">
+          <span class="brand-title">STEEL & GRAIN</span>
+          <span class="brand-sub">CULINARY CUTLERY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="desktop-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link-custom" aria-haspopup="true" aria-expanded="false">
+              Home <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown">
+              <a href="index.html" class="dropdown-link">
+                <span>Home 1 &mdash; Brand Showcase</span>
+                <span class="dropdown-tag">Default</span>
+              </a>
+              <a href="home-2.html" class="dropdown-link">
+                <span>Home 2 &mdash; Inside the Craft</span>
+                <span class="dropdown-tag">Editorial</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="products.html" class="nav-link-custom" aria-haspopup="true" aria-expanded="false">
+              Products <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown dropdown-wide">
+              <a href="products.html?type=chef" class="dropdown-link">
+                <span>Chef Knives</span>
+                <span class="dropdown-tag">6" / 8" / 10"</span>
+              </a>
+              <a href="products.html?type=santoku" class="dropdown-link">
+                <span>Santoku</span>
+                <span class="dropdown-tag">165mm / 180mm</span>
+              </a>
+              <a href="products.html?type=paring" class="dropdown-link">
+                <span>Paring Knives</span>
+                <span class="dropdown-tag">3.5" / 4"</span>
+              </a>
+              <a href="products.html?type=utility" class="dropdown-link">
+                <span>Utility Knives</span>
+                <span class="dropdown-tag">Prep Blades</span>
+              </a>
+              <a href="products.html?type=bread" class="dropdown-link">
+                <span>Bread Knives</span>
+                <span class="dropdown-tag">Serrated</span>
+              </a>
+              <a href="products.html?type=cleaver" class="dropdown-link">
+                <span>Cleavers & Nakiri</span>
+                <span class="dropdown-tag">Vegetable</span>
+              </a>
+              <a href="products.html?type=sets" class="dropdown-link">
+                <span>Knife Sets</span>
+                <span class="dropdown-tag">Curated</span>
+              </a>
+              <a href="products.html?type=accessories" class="dropdown-link">
+                <span>Accessories</span>
+                <span class="dropdown-tag">Boards & Rolls</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="collections.html" class="nav-link-custom active">Collections</a></li>
+          <li class="nav-item"><a href="sharpening.html" class="nav-link-custom">Sharpening</a></li>
+          <li class="nav-item"><a href="care-guide.html" class="nav-link-custom">Care Guide</a></li>
+          <li class="nav-item"><a href="our-craft.html" class="nav-link-custom">Our Craft</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme Toggle & Shop Knives CTA -->
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
+
+        <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
+          <span>Shop Knives</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-content-wrap">
+      <div class="mobile-nav-body">
+        <ul class="mobile-nav-list">
+          <!-- Home -->
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+              <span>Home</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="mobile-subnav">
+              <li>
+                <a href="index.html" class="mobile-subnav-link">
+                  <span>Home 1 &mdash; Brand Showcase</span>
+                  <span class="dropdown-tag">Default</span>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="mobile-subnav-link">
+                  <span>Home 2 &mdash; Inside the Craft</span>
+                  <span class="dropdown-tag">Editorial</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+              <span>Products</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="mobile-subnav">
+              <li>
+                <a href="products.html" class="mobile-subnav-link">
+                  <span>All Products</span>
+                  <span class="dropdown-tag">Overview</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=chef" class="mobile-subnav-link">
+                  <span>Chef Knives</span>
+                  <span class="dropdown-tag">6" / 8" / 10"</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=santoku" class="mobile-subnav-link">
+                  <span>Santoku</span>
+                  <span class="dropdown-tag">165mm / 180mm</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=paring" class="mobile-subnav-link">
+                  <span>Paring Knives</span>
+                  <span class="dropdown-tag">3.5" / 4"</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=utility" class="mobile-subnav-link">
+                  <span>Utility Knives</span>
+                  <span class="dropdown-tag">Prep Blades</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=bread" class="mobile-subnav-link">
+                  <span>Bread Knives</span>
+                  <span class="dropdown-tag">Serrated</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=cleaver" class="mobile-subnav-link">
+                  <span>Cleavers & Nakiri</span>
+                  <span class="dropdown-tag">Vegetable</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=sets" class="mobile-subnav-link">
+                  <span>Knife Sets</span>
+                  <span class="dropdown-tag">Curated</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=accessories" class="mobile-subnav-link">
+                  <span>Accessories</span>
+                  <span class="dropdown-tag">Boards & Rolls</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="mobile-nav-item"><a href="collections.html" class="mobile-nav-link">Collections</a></li>
+          <li class="mobile-nav-item"><a href="sharpening.html" class="mobile-nav-link">Sharpening</a></li>
+          <li class="mobile-nav-item"><a href="care-guide.html" class="mobile-nav-link">Care Guide</a></li>
+          <li class="mobile-nav-item"><a href="our-craft.html" class="mobile-nav-link">Our Craft</a></li>
+          <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Controls & CTA inside Menu Page -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
+        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <span class="font-mono small text-secondary">Color Theme</span>
+            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </div>
+          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <span class="font-mono small text-secondary">Layout Direction</span>
+            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+          </div>
+        </div>
+
+        <a href="products.html" class="btn btn-brass w-100 mb-3">
+          <span>Shop Knives</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO BANNER
+       ========================================================================== -->
+  <section class="py-5 bg-subtle border-bottom border-subtle">
+    <div class="container py-3 text-center">
+      <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+        <ol class="breadcrumb mb-2 font-mono small">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active text-brass" aria-current="page">Collections</li>
+        </ol>
+      </nav>
+      <h1 class="font-display display-5 mb-2">Specialty Cutlery Collections</h1>
+      <p class="lead text-secondary mb-0 mx-auto" style="max-width: 720px;">
+        Curated design families developed for distinct culinary workflows&mdash;from surgical Japanese push-cutting to high-endurance European line prep.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDITORIAL COLLECTION SHOWCASES (6 FULL SUITES)
+       ========================================================================== -->
+  <main class="py-5">
+    <div class="container">
+      <div class="d-flex flex-column gap-5">
+
+        <!-- 1. Japanese-Inspired (Primary Feature) -->
+        <article class="p-4 p-lg-5 bg-card-custom border border-subtle">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="badge-mono text-brass mb-2 d-block">SERIES 01 &bull; SURGICAL APEX</span>
+              <h2 class="font-display h1 mb-3">Japanese Craft Series</h2>
+              <p class="text-secondary lead">
+                Lightweight octagonal wa-handles paired with SG2 micro-powder and VG10 core billets, ground to an acute 15&deg; hand-honed bevel.
+              </p>
+              <p class="text-secondary small">
+                Engineered for chefs who prioritize laser-thin slicing, zero ingredient bruising, and effortless push-cutting. Features traditional Santoku, Nakiri, and Gyuto silhouettes.
+              </p>
+              <div class="d-flex flex-wrap gap-2 my-4">
+                <span class="spec-pill">SG2 Powder Core</span>
+                <span class="spec-pill">Takefu VG10</span>
+                <span class="spec-pill">Octagonal Teak & Ebony</span>
+                <span class="spec-pill">61&ndash;62 HRC</span>
+              </div>
+              <div class="d-flex gap-3">
+                <a href="collection-details.html" class="btn btn-brass">
+                  <span>Explore Series Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="products.html?type=santoku" class="btn btn-outline-custom">View Knives</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="position-relative overflow-hidden rounded border border-subtle">
+                <img src="assets/images/santoku/atelier-santoku-180.jpg" alt="Japanese Craft Series knife" class="w-100" style="height: 380px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Professional Kitchen Series -->
+        <article class="p-4 p-lg-5 bg-card-custom border border-subtle">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <span class="badge-mono text-brass mb-2 d-block">SERIES 02 &bull; HIGH-VOLUME PREP</span>
+              <h2 class="font-display h1 mb-3">Professional Kitchen Series</h2>
+              <p class="text-secondary lead">
+                Substantial European bolsters, ergonomic full-tang rivets, and cryogenically tempered Swedish 14C28N stainless steel.
+              </p>
+              <p class="text-secondary small">
+                Built for the rigorous pace of professional culinary lines and serious home kitchens. Resilient edges absorb contact with dense squash, root crops, and poultry cartilage without micro-chipping.
+              </p>
+              <div class="d-flex flex-wrap gap-2 my-4">
+                <span class="spec-pill">Sandvik 14C28N</span>
+                <span class="spec-pill">Resin-Fused Pakkawood</span>
+                <span class="spec-pill">Full-Tang Tri-Rivet</span>
+                <span class="spec-pill">59 HRC</span>
+              </div>
+              <div class="d-flex gap-3">
+                <a href="products.html?type=chef" class="btn btn-brass">
+                  <span>Browse Pro Series</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline-custom">Commercial Inquiries</a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="position-relative overflow-hidden rounded border border-subtle">
+                <img src="assets/images/chef-knives/pro-10-chef.jpg" alt="Professional Kitchen Series knife" class="w-100" style="height: 380px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Everyday Essentials -->
+        <article class="p-4 p-lg-5 bg-card-custom border border-subtle">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="badge-mono text-brass mb-2 d-block">SERIES 03 &bull; FOUNDATIONAL PREP</span>
+              <h2 class="font-display h1 mb-3">Everyday Essentials</h2>
+              <p class="text-secondary lead">
+                The three fundamental blades every home cook needs: a versatile 6" Chef Knife, an agile 3.5" Petty Paring blade, and an offset Serrated Bread Knife.
+              </p>
+              <p class="text-secondary small">
+                Streamlined, low-maintenance cutlery designed to replace cluttered 15-piece knife blocks with three perfectly balanced, razor-sharp everyday tools.
+              </p>
+              <div class="d-flex flex-wrap gap-2 my-4">
+                <span class="spec-pill">Cryo Stainless</span>
+                <span class="spec-pill">American Walnut</span>
+                <span class="spec-pill">Easy Honing</span>
+                <span class="spec-pill">Gift Boxed</span>
+              </div>
+              <div class="d-flex gap-3">
+                <a href="products.html?type=sets" class="btn btn-brass">
+                  <span>View Essential Sets</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="position-relative overflow-hidden rounded border border-subtle">
+                <img src="assets/images/knife-sets/essential-set-3pc.jpg" alt="Everyday Essentials Knife Set" class="w-100" style="height: 380px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Heritage Cutlery -->
+        <article class="p-4 p-lg-5 bg-card-custom border border-subtle">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <span class="badge-mono text-brass mb-2 d-block">SERIES 04 &bull; HEIRLOOM CRAFT</span>
+              <h2 class="font-display h1 mb-3">Heritage Cutlery</h2>
+              <p class="text-secondary lead">
+                Hammered Tsuchime finishes and folded Damascus steel layered over high-carbon cores, paired with deeply figured native hardwood handles.
+              </p>
+              <p class="text-secondary small">
+                A celebration of tactile woodworking and blacksmithing tradition. The hand-hammered indentations create natural air pockets during slicing while lending each knife an unmistakable artisan identity.
+              </p>
+              <div class="d-flex flex-wrap gap-2 my-4">
+                <span class="spec-pill">33-Layer Damascus</span>
+                <span class="spec-pill">Tsuchime Hammered</span>
+                <span class="spec-pill">Figured Walnut & Brass</span>
+                <span class="spec-pill">61 HRC</span>
+              </div>
+              <div class="d-flex gap-3">
+                <a href="products.html?type=cleaver" class="btn btn-brass">
+                  <span>View Heritage Blades</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="position-relative overflow-hidden rounded border border-subtle">
+                <img src="assets/images/cleavers/heritage-cleaver.jpg" alt="Heritage Cutlery Cleaver" class="w-100" style="height: 380px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Chef's Selection -->
+        <article class="p-4 p-lg-5 bg-card-custom border border-subtle">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="badge-mono text-brass mb-2 d-block">SERIES 05 &bull; SPECIALIZED TASKS</span>
+              <h2 class="font-display h1 mb-3">Chef's Selection & Specialty Knives</h2>
+              <p class="text-secondary lead">
+                Purpose-built task blades including long Sujihiki slicers, broad Chuka Bocho vegetable cleavers, and agile curved boning instruments.
+              </p>
+              <p class="text-secondary small">
+                Tailored for specialized culinary preparations: single-stroke sashimi carving, whole primal poultry fabrication, and ultra-fine julienne vegetable prep.
+              </p>
+              <div class="d-flex flex-wrap gap-2 my-4">
+                <span class="spec-pill">Specialized Geometry</span>
+                <span class="spec-pill">High Precision</span>
+                <span class="spec-pill">Ebony & Brass Accents</span>
+              </div>
+              <div class="d-flex gap-3">
+                <a href="products.html?type=cleaver" class="btn btn-brass">
+                  <span>Explore Specialty Blades</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="position-relative overflow-hidden rounded border border-subtle">
+                <img src="assets/images/cleavers/vegetable-cleaver.jpg" alt="Specialty Kitchen Cleaver" class="w-100" style="height: 380px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Complete Sets & Storage -->
+        <article class="p-4 p-lg-5 bg-card-custom border border-subtle">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <span class="badge-mono text-brass mb-2 d-block">SERIES 06 &bull; COMPLETE SUITE</span>
+              <h2 class="font-display h1 mb-3">Complete Cutlery Suites & Storage</h2>
+              <p class="text-secondary lead">
+                Coordinated master culinary sets housed on solid walnut magnetic presentation displays or wrapped inside waxed canvas travel rolls.
+              </p>
+              <p class="text-secondary small">
+                Every knife in the suite is balanced to the same tactile weight hierarchy, ensuring seamless muscle memory transitions when shifting between chef knives, paring blades, and slicers.
+              </p>
+              <div class="d-flex flex-wrap gap-2 my-4">
+                <span class="spec-pill">6 & 8-Piece Suites</span>
+                <span class="spec-pill">Walnut Block Included</span>
+                <span class="spec-pill">Ceramic Steel Included</span>
+              </div>
+              <div class="d-flex gap-3">
+                <a href="products.html?type=sets" class="btn btn-brass">
+                  <span>Explore Complete Suites</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="position-relative overflow-hidden rounded border border-subtle">
+                <img src="assets/images/knife-sets/complete-kitchen-set.jpg" alt="Complete Master Cutlery Suite" class="w-100" style="height: 380px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-12 col-lg-4">
+          <div class="brand-logo mb-3">
+            <div class="brand-symbol">S</div>
+            <div class="brand-text">
+              <span class="brand-title text-white">STEEL & GRAIN</span>
+              <span class="brand-sub">CULINARY CUTLERY</span>
+            </div>
+          </div>
+          <p class="text-muted pe-lg-4">
+            Specialty kitchen cutlery and precision culinary instruments. Selected for balance, edge longevity, and lifetime culinary performance.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            <a href="https://pinterest.com" class="footer-social-link" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><i class="bi bi-pinterest"></i></a>
+            <a href="https://facebook.com" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Shop -->
+        <div class="col-12 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Culinary Shop</h4>
+          <ul class="footer-nav">
+            <li><a href="products.html?type=chef">Chef Knives</a></li>
+            <li><a href="products.html?type=santoku">Santoku</a></li>
+            <li><a href="products.html?type=paring">Paring Knives</a></li>
+            <li><a href="products.html?type=bread">Bread Knives</a></li>
+            <li><a href="products.html?type=cleaver">Cleavers & Nakiri</a></li>
+            <li><a href="products.html?type=sets">Curated Sets</a></li>
+            <li><a href="products.html?type=accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Expertise -->
+        <div class="col-12 col-md-3 col-lg-3">
+          <h4 class="footer-heading">Knowledge & Care</h4>
+          <ul class="footer-nav">
+            <li><a href="sharpening.html">Sharpening Services</a></li>
+            <li><a href="care-guide.html">Knife Care Guide</a></li>
+            <li><a href="care-details.html">Carbon Steel Maintenance</a></li>
+            <li><a href="our-craft.html">Our Metallurgy & Craft</a></li>
+            <li><a href="collections.html">Collection Overview</a></li>
+            <li><a href="collection-details.html">Japanese Craft Series</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Workshop -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Workshop & Store</h4>
+          <p class="mb-2 text-muted"><i class="bi bi-geo-alt me-2 text-brass"></i> 1482 Artisan Way, Timber District</p>
+          <p class="mb-2 text-muted"><i class="bi bi-envelope me-2 text-brass"></i> studio@steelandgrain.com</p>
+          <p class="mb-3 text-muted"><i class="bi bi-telephone me-2 text-brass"></i> (555) 234-5690</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="small text-muted">
+          &copy; 2026 STEEL & GRAIN Cutlery Store. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 small text-muted">
+          <a href="contact.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="contact.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="care-guide.html">Care Standards</a>
+          <span>&bull;</span>
+          <a href="documentation/index.html">Template Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

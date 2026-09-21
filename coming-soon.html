@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon - STEEL & GRAIN</title>
+  <meta name="description" content="Forging the next evolution in culinary cutlery. Sign up for early studio allocation and workshop release announcements.">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-between bg-primary">
+
+  <!-- Header Minimal -->
+  <header class="py-4 border-bottom border-subtle">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand-logo" aria-label="STEEL & GRAIN Home">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">
+          <span class="brand-title">STEEL & GRAIN</span>
+          <span class="brand-sub">CULINARY CUTLERY</span>
+        </div>
+      </a>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Coming Soon Main -->
+  <main class="py-5 my-auto">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <span class="badge-mono text-brass mb-2 d-block">NEW WORKSHOP RELEASE &bull; AUTUMN 2026</span>
+          <h1 class="font-display display-3 mb-3">Forging the Next Evolution in Culinary Cutlery.</h1>
+          <p class="lead text-secondary mb-4">
+            Our master bladesmiths and cutlery engineers are completing heat-treatment trials for our forthcoming <strong>Kurogane Black Oxide & Damascus Collection</strong>.
+          </p>
+
+          <!-- Email Notification Form -->
+          <div class="p-4 bg-card-custom border border-subtle rounded mb-4" style="max-width: 540px;">
+            <h5 class="font-display mb-2">Request Early Studio Allocation</h5>
+            <p class="small text-secondary mb-3">Subscribers receive private 48-hour access prior to public release.</p>
+
+            <form id="notifyForm" onsubmit="event.preventDefault(); document.getElementById('notifySuccess').style.display='block'; this.style.display='none';">
+              <div class="input-group">
+                <input type="email" class="form-control-custom" placeholder="Enter your email address" required aria-label="Email Address">
+                <button type="submit" class="btn btn-brass text-nowrap">Notify Me</button>
+              </div>
+            </form>
+
+            <div id="notifySuccess" class="alert alert-success mt-2 font-mono small py-2" style="display: none;">
+              <i class="bi bi-check-circle-fill me-1"></i> You are on the private allocation list. We will notify you upon launch.
+            </div>
+          </div>
+
+          <div class="d-flex gap-4 font-mono small text-secondary">
+            <div>
+              <span class="text-brass fw-bold d-block fs-5">06</span>
+              <span>Limited Silhouettes</span>
+            </div>
+            <div class="border-start border-subtle ps-4">
+              <span class="text-brass fw-bold d-block fs-5">150</span>
+              <span>Serialized Blades</span>
+            </div>
+            <div class="border-start border-subtle ps-4">
+              <span class="text-brass fw-bold d-block fs-5">SG2</span>
+              <span>Micro-Powder Core</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <div class="rounded border border-subtle overflow-hidden shadow-lg">
+              <img src="assets/images/craftsmanship/damascus-macro.jpg" alt="Macro detail of folded Damascus blade billet" class="w-100" style="height: 480px; object-fit: cover;">
+            </div>
+            <div class="p-3 bg-card-custom border border-subtle position-absolute bottom-0 start-0 m-3 shadow-md">
+              <span class="tech-label text-brass d-block">PROTOTYPE BEVEL</span>
+              <span class="font-display fs-5">Kurogane Suminagashi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Minimal -->
+  <footer class="py-4 border-top border-subtle">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div class="small text-muted font-mono">
+        &copy; 2026 STEEL & GRAIN Cutlery Store. Precision crafted for the kitchen.
+      </div>
+      <div class="d-flex gap-3 text-muted">
+        <a href="index.html" class="small font-mono text-brass">Explore Existing Collection &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

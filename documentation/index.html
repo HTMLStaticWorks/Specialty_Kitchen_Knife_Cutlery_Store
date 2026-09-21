@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation - STEEL & GRAIN Cutlery Template</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .doc-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .doc-section {
+      padding-top: 2rem;
+      margin-bottom: 3.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 3rem;
+    }
+    pre {
+      background-color: var(--color-graphite);
+      color: #E2E6EA;
+      padding: 1.25rem;
+      border-radius: var(--radius-sm);
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+    code {
+      font-family: var(--font-mono);
+      color: var(--accent-brass);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="navbar-container">
+      <a href="../index.html" class="brand-logo" aria-label="STEEL & GRAIN Home">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">
+          <span class="brand-title">STEEL & GRAIN</span>
+          <span class="brand-sub">TEMPLATE DOCUMENTATION</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="../index.html" class="btn btn-brass">
+          <span>View Website</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Sidebar Navigation -->
+        <aside class="col-lg-3">
+          <div class="doc-sidebar p-3 bg-card-custom border border-subtle rounded">
+            <span class="tech-label text-brass d-block mb-3">DOCUMENTATION INDEX</span>
+            <ul class="list-unstyled small font-mono d-flex flex-column gap-2 mb-0">
+              <li><a href="#overview" class="text-secondary">1. Template Overview</a></li>
+              <li><a href="#structure" class="text-secondary">2. Folder Structure</a></li>
+              <li><a href="#theme" class="text-secondary">3. Theme System (Light/Dark)</a></li>
+              <li><a href="#filtering" class="text-secondary">4. Product Filtering Engine</a></li>
+              <li><a href="#products" class="text-secondary">5. Adding New Products</a></li>
+              <li><a href="#scripts" class="text-secondary">6. JavaScript Architecture</a></li>
+              <li><a href="#customization" class="text-secondary">7. Customization & Colors</a></li>
+              <li><a href="#credits" class="text-secondary">8. Credits & Dependencies</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="col-lg-9">
+          <!-- 1. Overview -->
+          <section class="doc-section" id="overview">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 01</span>
+            <h1 class="font-display h2 mb-3">Template Overview</h1>
+            <p class="lead text-secondary">
+              <strong>STEEL & GRAIN</strong> is a commercial-grade, multi-page HTML5 template specifically designed for high-end specialty culinary knife and cutlery stores, bladesmith workshops, and culinary tool retailers.
+            </p>
+            <p class="text-secondary">
+              Built on HTML5, Bootstrap 5, Vanilla CSS3 with custom properties, and pure JavaScript. It includes 13 fully realized pages, an interactive filtering/sorting engine, an image gallery with optical lightbox, form validation, and persistent dark/light theme switching.
+            </p>
+          </section>
+
+          <!-- 2. Folder Structure -->
+          <section class="doc-section" id="structure">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 02</span>
+            <h2 class="font-display h3 mb-3">Folder Structure</h2>
+            <pre><code>specialty-kitchen-cutlery/
+|-- index.html                  # Home 1: Brand showcase
+|-- home-2.html                 # Home 2: "Inside the Craft" editorial
+|-- products.html               # Product catalogue with filter/sort
+|-- product-details.html        # Detailed product showcase & lightbox
+|-- collections.html            # Collections overview (6 suites)
+|-- collection-details.html     # Dedicated Japanese Craft series
+|-- sharpening.html             # Sharpening services & tiers
+|-- care-guide.html             # Culinary knife care foundations
+|-- care-details.html           # Carbon steel & Damascus guide
+|-- our-craft.html              # Workshop metallurgy & geometry
+|-- contact.html                # Inquiry form with validation
+|-- 404.html                    # Branded error page
+|-- coming-soon.html            # Pre-launch allocation teaser
+|
+|-- assets/
+|   |-- css/
+|   |   |-- bootstrap.min.css   # Bootstrap 5 grid & baseline
+|   |   `-- style.css           # Master stylesheet & design tokens
+|   |-- js/
+|   |   |-- bootstrap.bundle.min.js
+|   |   |-- gsap.min.js         # GSAP animation engine
+|   |   |-- ScrollTrigger.min.js
+|   |   `-- main.js             # Core interactive logic
+|   `-- images/                 # Local culinary photography
+|       |-- hero/
+|       |-- chef-knives/
+|       |-- santoku/
+|       |-- paring/
+|       |-- bread-knives/
+|       |-- cleavers/
+|       |-- knife-sets/
+|       |-- accessories/
+|       |-- craftsmanship/
+|       |-- sharpening/
+|       `-- care/
+|
+|-- documentation/
+|   `-- index.html              # This documentation
+`-- README.md</code></pre>
+          </section>
+
+          <!-- 3. Theme System -->
+          <section class="doc-section" id="theme">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 03</span>
+            <h2 class="font-display h3 mb-3">Theme System (Light & Dark)</h2>
+            <p class="text-secondary">
+              The theme system uses CSS Custom Properties defined on <code>:root</code> and overrides in <code>[data-theme="dark"]</code>.
+            </p>
+            <pre><code>/* Example in assets/css/style.css */
+:root {
+  --bg-primary: #FDFBF7;
+  --text-primary: #1C1E21;
+  --accent-brass: #C5A059;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #121316;
+  --text-primary: #F7F5F0;
+  --accent-brass: #D4B26F;
+}</code></pre>
+            <p class="small text-secondary">
+              Theme selection is stored in <code>localStorage.setItem('sg_theme', 'dark' | 'light')</code> and survives across all 13 pages.
+            </p>
+          </section>
+
+          <!-- 4. Filtering -->
+          <section class="doc-section" id="filtering">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 04</span>
+            <h2 class="font-display h3 mb-3">Product Filtering Engine</h2>
+            <p class="text-secondary">
+              The filtering engine in <code>assets/js/main.js</code> reads data attributes directly from product card containers:
+            </p>
+            <pre><code>&lt;div class="product-item-col" 
+     data-type="chef" 
+     data-steel="vg10" 
+     data-handle="walnut" 
+     data-price="240" 
+     data-date="202609"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            <p class="small text-secondary">
+              Checking any filter box dynamically scans all items in real time, updating the visible product count and re-ordering on sort selection.
+            </p>
+          </section>
+
+          <!-- 5. Adding Products -->
+          <section class="doc-section" id="products">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 05</span>
+            <h2 class="font-display h3 mb-3">Adding New Products</h2>
+            <p class="text-secondary">
+              To add a new knife or accessory to <code>products.html</code>, duplicate any <code>.product-item-col</code> block inside <code>#productsGridContainer</code>, specify its image and content, and adjust the <code>data-*</code> attributes to match your criteria.
+            </p>
+          </section>
+
+          <!-- 6. Scripts -->
+          <section class="doc-section" id="scripts">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 06</span>
+            <h2 class="font-display h3 mb-3">JavaScript Architecture</h2>
+            <ul class="text-secondary small">
+              <li><code>initThemeSystem()</code>: Manages localStorage and updates sun/moon icons.</li>
+              <li><code>initStickyHeader()</code>: Adds blur/shadow on scroll.</li>
+              <li><code>initMobileNavigation()</code>: Controls mobile drawer and subnav accordions.</li>
+              <li><code>initProductFiltering()</code>: Client-side filtering and sorting.</li>
+              <li><code>initProductGallery()</code>: Thumbnail switcher on product detail page.</li>
+              <li><code>initLightbox()</code>: High-resolution zoom overlay with ESC listener.</li>
+              <li><code>initAccordions()</code>: FAQ expand/collapse logic.</li>
+              <li><code>initEnquiryForm()</code>: Client-side validation and success toast.</li>
+            </ul>
+          </section>
+
+          <!-- 7. Customization -->
+          <section class="doc-section" id="customization">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 07</span>
+            <h2 class="font-display h3 mb-3">Customization & Colors</h2>
+            <p class="text-secondary">
+              To change brand colors, edit the variables at the top of <code>assets/css/style.css</code>:
+            </p>
+            <pre><code>--accent-brass: #C5A059;       /* Primary metallic accent */
+--accent-walnut: #4A3728;      /* Wood tone accent */
+--color-graphite: #16181A;     /* Dark contrasting element */</code></pre>
+          </section>
+
+          <!-- 8. Credits -->
+          <section class="doc-section border-bottom-0" id="credits">
+            <span class="badge-mono text-brass mb-2 d-block">SECTION 08</span>
+            <h2 class="font-display h3 mb-3">Credits & Dependencies</h2>
+            <ul class="text-secondary small">
+              <li><strong>CSS Grid:</strong> Bootstrap 5.3.3</li>
+              <li><strong>Icons:</strong> Bootstrap Icons 1.11.3</li>
+              <li><strong>Animations:</strong> GSAP 3.12.5 & ScrollTrigger</li>
+              <li><strong>Typography:</strong> Google Fonts (Manrope, Cormorant Garamond, Space Grotesk)</li>
+              <li><strong>Culinary Photography:</strong> Unsplash curated culinary license</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 border-top border-subtle text-center small text-muted font-mono">
+    &copy; 2026 STEEL & GRAIN Cutlery Store. Commercial HTML Template.
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
+

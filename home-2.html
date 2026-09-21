@@ -1,0 +1,855 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside the Craft - STEEL & GRAIN Specialty Cutlery</title>
+  <meta name="description" content="An editorial exploration of culinary metallurgy, knife geometry, ergonomic woodworking, and sharpening discipline.">
+  <meta name="keywords" content="knife craftsmanship, culinary metallurgy, blade geometry, Japanese knife making, chef cutlery workshop">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="STEEL & GRAIN - Inside the Craft">
+  <meta property="og:description" content="Precision begins before the first cut. Explore culinary knife metallurgy, blade geometry, and ergonomic handle craftsmanship.">
+  <meta property="og:image" content="assets/images/hero/hero-split.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & MANDATORY NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="navbar-container">
+      <!-- Logo -->
+      <a href="index.html" class="brand-logo" aria-label="STEEL & GRAIN Home">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">
+          <span class="brand-title">STEEL & GRAIN</span>
+          <span class="brand-sub">CULINARY CUTLERY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="desktop-nav">
+          <!-- Home Dropdown -->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link-custom active" aria-haspopup="true" aria-expanded="false">
+              Home <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown">
+              <a href="index.html" class="dropdown-link">
+                <span>Home 1 &mdash; Brand Showcase</span>
+                <span class="dropdown-tag">Default</span>
+              </a>
+              <a href="home-2.html" class="dropdown-link">
+                <span>Home 2 &mdash; Inside the Craft</span>
+                <span class="dropdown-tag">Editorial</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link-custom" aria-haspopup="true" aria-expanded="false">
+              Products <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown dropdown-wide">
+              <a href="products.html?type=chef" class="dropdown-link">
+                <span>Chef Knives</span>
+                <span class="dropdown-tag">6" / 8" / 10"</span>
+              </a>
+              <a href="products.html?type=santoku" class="dropdown-link">
+                <span>Santoku</span>
+                <span class="dropdown-tag">165mm / 180mm</span>
+              </a>
+              <a href="products.html?type=paring" class="dropdown-link">
+                <span>Paring Knives</span>
+                <span class="dropdown-tag">3.5" / 4"</span>
+              </a>
+              <a href="products.html?type=utility" class="dropdown-link">
+                <span>Utility Knives</span>
+                <span class="dropdown-tag">Prep Blades</span>
+              </a>
+              <a href="products.html?type=bread" class="dropdown-link">
+                <span>Bread Knives</span>
+                <span class="dropdown-tag">Serrated</span>
+              </a>
+              <a href="products.html?type=cleaver" class="dropdown-link">
+                <span>Cleavers & Nakiri</span>
+                <span class="dropdown-tag">Vegetable</span>
+              </a>
+              <a href="products.html?type=sets" class="dropdown-link">
+                <span>Knife Sets</span>
+                <span class="dropdown-tag">Curated</span>
+              </a>
+              <a href="products.html?type=accessories" class="dropdown-link">
+                <span>Accessories</span>
+                <span class="dropdown-tag">Boards & Rolls</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="collections.html" class="nav-link-custom">Collections</a></li>
+          <li class="nav-item"><a href="sharpening.html" class="nav-link-custom">Sharpening</a></li>
+          <li class="nav-item"><a href="care-guide.html" class="nav-link-custom">Care Guide</a></li>
+          <li class="nav-item"><a href="our-craft.html" class="nav-link-custom">Our Craft</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme Toggle & Shop Knives CTA -->
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
+
+        <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
+          <span>Shop Knives</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-content-wrap">
+      <div class="mobile-nav-body">
+        <ul class="mobile-nav-list">
+          <!-- Home -->
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+              <span>Home</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="mobile-subnav">
+              <li>
+                <a href="index.html" class="mobile-subnav-link">
+                  <span>Home 1 &mdash; Brand Showcase</span>
+                  <span class="dropdown-tag">Default</span>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="mobile-subnav-link">
+                  <span>Home 2 &mdash; Inside the Craft</span>
+                  <span class="dropdown-tag">Editorial</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+              <span>Products</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="mobile-subnav">
+              <li>
+                <a href="products.html" class="mobile-subnav-link">
+                  <span>All Products</span>
+                  <span class="dropdown-tag">Overview</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=chef" class="mobile-subnav-link">
+                  <span>Chef Knives</span>
+                  <span class="dropdown-tag">6" / 8" / 10"</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=santoku" class="mobile-subnav-link">
+                  <span>Santoku</span>
+                  <span class="dropdown-tag">165mm / 180mm</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=paring" class="mobile-subnav-link">
+                  <span>Paring Knives</span>
+                  <span class="dropdown-tag">3.5" / 4"</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=utility" class="mobile-subnav-link">
+                  <span>Utility Knives</span>
+                  <span class="dropdown-tag">Prep Blades</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=bread" class="mobile-subnav-link">
+                  <span>Bread Knives</span>
+                  <span class="dropdown-tag">Serrated</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=cleaver" class="mobile-subnav-link">
+                  <span>Cleavers & Nakiri</span>
+                  <span class="dropdown-tag">Vegetable</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=sets" class="mobile-subnav-link">
+                  <span>Knife Sets</span>
+                  <span class="dropdown-tag">Curated</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=accessories" class="mobile-subnav-link">
+                  <span>Accessories</span>
+                  <span class="dropdown-tag">Boards & Rolls</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="mobile-nav-item"><a href="collections.html" class="mobile-nav-link">Collections</a></li>
+          <li class="mobile-nav-item"><a href="sharpening.html" class="mobile-nav-link">Sharpening</a></li>
+          <li class="mobile-nav-item"><a href="care-guide.html" class="mobile-nav-link">Care Guide</a></li>
+          <li class="mobile-nav-item"><a href="our-craft.html" class="mobile-nav-link">Our Craft</a></li>
+          <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Controls & CTA inside Menu Page -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
+        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <span class="font-mono small text-secondary">Color Theme</span>
+            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </div>
+          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <span class="font-mono small text-secondary">Layout Direction</span>
+            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+          </div>
+        </div>
+
+        <a href="products.html" class="btn btn-brass w-100 mb-3">
+          <span>Shop Knives</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: SPLIT-SCREEN EDITORIAL HERO
+         ========================================================================== -->
+    <section class="hero-split">
+      <div class="hero-split-left hero-fade">
+        <div class="d-inline-flex align-items-center gap-2 mb-3">
+          <span class="badge-mono text-brass">CRAFT ESSAY &bull; ISSUE 04</span>
+          <span class="text-muted">&bull;</span>
+          <span class="tech-label text-muted">METALLURGY & KINEMATICS</span>
+        </div>
+        <h1 class="font-display display-3 mb-4">Precision Begins Before the First Cut.</h1>
+        <p class="lead text-secondary mb-4">
+          Great cooking is an accumulation of micro-decisions: the temperature of a pan, the grain direction of a protein, and the thickness of a vegetable dice. The instrument in your hand should never compromise that clarity.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#metallurgy" class="btn btn-brass">
+            <span>Explore Metallurgy</span>
+            <i class="bi bi-arrow-down"></i>
+          </a>
+          <a href="products.html" class="btn btn-outline-custom">
+            <span>Shop The Blades</span>
+          </a>
+        </div>
+
+        <div class="mt-5 pt-4 border-top border-subtle d-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+          <div>
+            <span class="tech-label text-muted d-block">BEVEL RATIO</span>
+            <span class="font-mono fw-bold fs-5 text-brass">50/50 Dual</span>
+          </div>
+          <div>
+            <span class="tech-label text-muted d-block">ROCKWELL</span>
+            <span class="font-mono fw-bold fs-5 text-brass">61.5 HRC</span>
+          </div>
+          <div>
+            <span class="tech-label text-muted d-block">TAPER</span>
+            <span class="font-mono fw-bold fs-5 text-brass">2.2mm &rarr; 0.6mm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-split-right hero-fade">
+        <img src="assets/images/hero/hero-split.jpg" alt="Artisan kitchen prep and precision cutting blade" data-lightbox-trigger>
+        <div class="split-overlay-card">
+          <span class="badge-mono text-brass d-block mb-1">MACRO ARCHITECTURE</span>
+          <h4 class="font-display mb-1 text-white">Full Distal Taper & Convex Grind</h4>
+          <p class="small text-white-50 mb-0">
+            Tapering from spine to apex ensures effortless lateral release, preventing dense starches like potatoes and squash from vacuum-suctioning to the blade face.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: STEEL & MATERIAL STORY
+         ========================================================================== -->
+    <section class="py-5 bg-card-custom metallurgy-matrix-section" id="metallurgy">
+      <div class="container py-lg-4">
+        <div class="section-header text-center scroll-reveal">
+          <span class="section-eyebrow">The Heart of the Blade</span>
+          <h2 class="section-title">The Culinary Metallurgy Matrix</h2>
+          <p class="section-subtitle">Understanding why we select distinct steel grades for different culinary applications.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">POWDER METALLURGY</span>
+              <h3 class="font-display">SG2 / R2 Micro-Steel</h3>
+              <p class="small text-secondary">
+                Produced through rapid gas-atomization, resulting in ultra-uniform carbide distribution. Capable of being ground to extreme acute bevels (12&deg;&ndash;15&deg;) while resisting micro-chipping.
+              </p>
+              <ul class="list-unstyled small font-mono text-secondary mt-3 pt-3 border-top border-subtle">
+                <li>&bull; Hardness: 62&ndash;63 HRC</li>
+                <li>&bull; Primary use: Slicing, sashimi, herbs</li>
+                <li>&bull; Sharpening: Requires water stones</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">HIGH-CARBON ALLOY</span>
+              <h3 class="font-display">Japanese VG10 Core</h3>
+              <p class="small text-secondary">
+                The gold standard of balanced culinary cutlery. Fortified with cobalt and molybdenum to provide exceptional edge bite, stain resistance, and responsive feedback during kitchen honing.
+              </p>
+              <ul class="list-unstyled small font-mono text-secondary mt-3 pt-3 border-top border-subtle">
+                <li>&bull; Hardness: 60&ndash;61 HRC</li>
+                <li>&bull; Primary use: General chef knives, santoku</li>
+                <li>&bull; Sharpening: Moderate ease</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">SWEDISH NITROGEN</span>
+              <h3 class="font-display">Sandvik 14C28N</h3>
+              <p class="small text-secondary">
+                Optimized for high-impact durability and wet prep environments. Chromium-nitrogen chemistry prevents edge corrosion even when working continuously with acidic citrus and tomatoes.
+              </p>
+              <ul class="list-unstyled small font-mono text-secondary mt-3 pt-3 border-top border-subtle">
+                <li>&bull; Hardness: 58&ndash;60 HRC</li>
+                <li>&bull; Primary use: Utility, paring, bread knives</li>
+                <li>&bull; Sharpening: Fast and forgiving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: BLADE GEOMETRY DEEP DIVE
+         ========================================================================== -->
+    <section class="py-5 bg-subtle">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 scroll-reveal">
+            <span class="section-eyebrow">Cross-Sectional Mechanics</span>
+            <h2 class="section-title">The Geometry Behind the "Ghost Cut"</h2>
+            <p class="text-secondary">
+              A knife that is merely sharp will still wedge in a carrot. True cutting freedom requires three coordinated structural dimensions:
+            </p>
+
+            <div class="mt-4">
+              <div class="mb-4">
+                <h5 class="font-display mb-1"><i class="bi bi-arrow-right-short text-brass"></i> 1. The Distal Taper</h5>
+                <p class="small text-secondary mb-0">
+                  The spine gradually thins from 2.5mm over the heel down to a needle-fine 0.5mm near the tip, allowing the heel to handle heavy chopping while the tip glides through onions.
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="font-display mb-1"><i class="bi bi-arrow-right-short text-brass"></i> 2. The Hamaguri (Convex) Bevel</h5>
+                <p class="small text-secondary mb-0">
+                  Instead of a flat V-grind, the blade face features a gentle clamshell curve that introduces air pockets between the sliced food and the steel, stopping starchy adhesion.
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="font-display mb-1"><i class="bi bi-arrow-right-short text-brass"></i> 3. Rounded & Polished Spine / Choil</h5>
+                <p class="small text-secondary mb-0">
+                  The corners where your finger rests in a professional pinch grip are hand-radiused and polished, ensuring zero hotspot friction during hours of prep.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 scroll-reveal">
+            <div class="p-4 bg-card-custom border border-subtle shadow-md">
+              <img src="assets/images/craftsmanship/grinding.jpg" alt="Blade geometry grinding" class="rounded mb-3">
+              <div class="p-2 border-top border-subtle">
+                <div class="d-flex justify-content-between font-mono small text-muted">
+                  <span>GRIND: Asymmetrical Hamaguri</span>
+                  <span>APEX: 15&deg; Micro-bevel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: HANDLE CRAFTSMANSHIP & WOOD GRAIN
+         ========================================================================== -->
+    <section class="py-5 bg-card-custom">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2 scroll-reveal">
+            <span class="section-eyebrow">Natural Tactility</span>
+            <h2 class="section-title">Wood, Warmth & Kinetic Control</h2>
+            <p class="text-secondary">
+              The handle is your nervous system's connection to the cutting edge. We believe synthetic plastics feel cold and dead in the culinary kitchen.
+            </p>
+            <p class="text-secondary">
+              We select kiln-dried American Walnut, Teak, and African Blackwood. Each blank is vacuum-infused with food-safe botanical oils and beeswax, rendering the wood naturally water-resistant while preserving the warm, fibrous texture of natural grain.
+            </p>
+
+            <div class="row g-3 mt-3">
+              <div class="col-6">
+                <div class="p-3 bg-subtle border border-subtle">
+                  <span class="tech-label text-brass d-block">OCTAGONAL WA</span>
+                  <span class="font-display fs-5">Japanese Profile</span>
+                  <p class="small text-secondary mb-0 mt-1">Lightweight, forward-weighted balance for agile fingertip indexing.</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-subtle border border-subtle">
+                  <span class="tech-label text-brass d-block">CONTOURED WESTERN</span>
+                  <span class="font-display fs-5">Full-Tang Profile</span>
+                  <p class="small text-secondary mb-0 mt-1">Palm-filling security with integral brass pins and tapered bolster.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1 scroll-reveal">
+            <div class="position-relative">
+              <img src="assets/images/craftsmanship/handle-craft.jpg" alt="Shaping walnut knife handle" class="rounded border border-subtle shadow-md">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: FEATURED CHEF KNIVES (SIDE-BY-SIDE TECHNICAL)
+         ========================================================================== -->
+    <section class="py-5 bg-subtle">
+      <div class="container py-lg-4">
+        <div class="section-header text-center scroll-reveal">
+          <span class="section-eyebrow">Core Instruments</span>
+          <h2 class="section-title">The Foundation Chef Knife Line</h2>
+          <p class="section-subtitle">Comparing the three core lengths to match your prep board and workspace.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 6" Chef -->
+          <div class="col-lg-4 scroll-reveal">
+            <div class="knife-card">
+              <div class="knife-card-media">
+                <span class="knife-card-badge">Agile Line</span>
+                <img src="assets/images/chef-knives/kanso-6-chef.jpg" alt="6 inch Chef Knife">
+              </div>
+              <div class="knife-card-body">
+                <span class="knife-card-type">Chef Knife &bull; 6-Inch (150mm)</span>
+                <h3 class="knife-card-title"><a href="product-details.html">Atelier 6" Chef Knife</a></h3>
+                <p class="small text-secondary">
+                  Exceptional maneuverability for small prep stations, apartment kitchens, and cooks who prefer nimble control over board reach.
+                </p>
+                <div class="spec-table-mini font-mono small text-secondary mb-3">
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Weight</span><span>155 grams</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Spine Thickness</span><span>1.9 mm</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Steel</span><span>VG10 Clad</span>
+                  </div>
+                </div>
+                <div class="knife-card-footer">
+                  <span class="knife-price">$195</span>
+                  <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Specs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8" Chef -->
+          <div class="col-lg-4 scroll-reveal">
+            <div class="knife-card border-brass">
+              <div class="knife-card-media">
+                <span class="knife-card-badge bg-brass text-dark">Universal Standard</span>
+                <img src="assets/images/chef-knives/artisan-8-chef.jpg" alt="8 inch Chef Knife">
+              </div>
+              <div class="knife-card-body">
+                <span class="knife-card-type text-brass">Chef Knife &bull; 8-Inch (200mm)</span>
+                <h3 class="knife-card-title"><a href="product-details.html">Artisan 8" Chef Knife</a></h3>
+                <p class="small text-secondary">
+                  The indisputable king of culinary cutting. Optimal length to cleanly clear large onions and proteins in single, clean drawing motions.
+                </p>
+                <div class="spec-table-mini font-mono small text-secondary mb-3">
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Weight</span><span>195 grams</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Spine Thickness</span><span>2.2 mm</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Steel</span><span>VG10 Super Core</span>
+                  </div>
+                </div>
+                <div class="knife-card-footer">
+                  <span class="knife-price">$240</span>
+                  <a href="product-details.html" class="btn btn-sm-custom btn-brass">View Specs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10" Chef -->
+          <div class="col-lg-4 scroll-reveal">
+            <div class="knife-card">
+              <div class="knife-card-media">
+                <span class="knife-card-badge">Commercial Heavy</span>
+                <img src="assets/images/chef-knives/pro-10-chef.jpg" alt="10 inch Chef Knife">
+              </div>
+              <div class="knife-card-body">
+                <span class="knife-card-type">Chef Knife &bull; 10-Inch (250mm)</span>
+                <h3 class="knife-card-title"><a href="product-details.html">Forge Pro 10" Chef</a></h3>
+                <p class="small text-secondary">
+                  Extended leverage and blade mass for breaking down whole watermelons, cabbages, roasts, and high-volume commercial prep tasks.
+                </p>
+                <div class="spec-table-mini font-mono small text-secondary mb-3">
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Weight</span><span>245 grams</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Spine Thickness</span><span>2.6 mm</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom border-subtle">
+                    <span>Steel</span><span>14C28N Cryo</span>
+                  </div>
+                </div>
+                <div class="knife-card-footer">
+                  <span class="knife-price">$275</span>
+                  <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Specs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6 & 7: JAPANESE VS EUROPEAN PHILOSOPHIES
+         ========================================================================== -->
+    <section class="py-5 bg-card-custom">
+      <div class="container py-lg-4">
+        <div class="section-header text-center scroll-reveal">
+          <span class="section-eyebrow">Culinary Lineages</span>
+          <h2 class="section-title">Two Traditions. One Commitment to Edge.</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 scroll-reveal">
+            <div class="p-4 p-md-5 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">EASTERN LINEAGE</span>
+              <h3 class="font-display">Japanese Craft (Wa)</h3>
+              <p class="text-secondary">
+                Rooted in Sakai and Echizen swordsmithing legacies. Characterized by acute 15&deg; micro-bevels, harder steel (61&ndash;63 HRC), lighter wa-handles, and flatter belly profiles tailored for push-cutting and paper-thin vegetable ribbons.
+              </p>
+              <div class="mt-4 pt-3 border-top border-subtle">
+                <a href="collection-details.html" class="link-arrow">Discover Japanese Craft Series <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 scroll-reveal">
+            <div class="p-4 p-md-5 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">WESTERN LINEAGE</span>
+              <h3 class="font-display">European Culinary Heritage</h3>
+              <p class="text-secondary">
+                Influenced by Solingen and French kitchen traditions. Characterized by curved bellies that facilitate rhythmic rocking motions, full-tang ergonomic balance, and tough steels that resist chipping against hard poultry bone.
+              </p>
+              <div class="mt-4 pt-3 border-top border-subtle">
+                <a href="collections.html" class="link-arrow">Discover European Heritage Series <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: SHARPENING TIMELINE & MATRIX
+         ========================================================================== -->
+    <section class="py-5 bg-subtle">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 scroll-reveal">
+            <span class="section-eyebrow">Restoration Standards</span>
+            <h2 class="section-title">Edge Restoration Without Heat Damage</h2>
+            <p class="text-secondary">
+              Most commercial sharpeners grind blades on high-RPM belts that generate friction temperatures over 400&deg;F, softening the steel temper permanently.
+            </p>
+            <p class="text-secondary">
+              At STEEL & GRAIN, our workshop restoration relies purely on lubricated rotating Japanese water wheels and hand water stones. We measure bevel angles with digital goniometers before and after honing.
+            </p>
+            <a href="sharpening.html" class="btn btn-brass mt-2">
+              <span>View Sharpening Options</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-6 scroll-reveal">
+            <div class="p-4 bg-card-custom border border-subtle">
+              <h4 class="font-display mb-3">Sharpening Workflow Protocol</h4>
+              <div class="d-flex flex-column gap-3">
+                <div class="p-3 bg-subtle border border-subtle">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="fw-bold text-primary font-mono small">STAGE 1: BEVEL RESET</span>
+                    <span class="badge-mono text-brass">#400 Grit</span>
+                  </div>
+                  <p class="small text-secondary mb-0">Corrects micro-nicks, chips, and reprofiles the primary cutting wedge.</p>
+                </div>
+
+                <div class="p-3 bg-subtle border border-subtle">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="fw-bold text-primary font-mono small">STAGE 2: EDGE REFINEMENT</span>
+                    <span class="badge-mono text-brass">#1,000 / #3,000 Grit</span>
+                  </div>
+                  <p class="small text-secondary mb-0">Refines scratch patterns and forms the true razor apex along the entire edge curve.</p>
+                </div>
+
+                <div class="p-3 bg-subtle border border-subtle">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="fw-bold text-primary font-mono small">STAGE 3: MIRROR STROPPING</span>
+                    <span class="badge-mono text-brass">#6,000 Grit & Leather</span>
+                  </div>
+                  <p class="small text-secondary mb-0">De-burrs the apex on diamond compound leather for effortless push-cutting.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: KNIFE CARE ESSENTIALS CHECKLIST
+         ========================================================================== -->
+    <section class="py-5 bg-card-custom">
+      <div class="container py-lg-4">
+        <div class="section-header text-center scroll-reveal">
+          <span class="section-eyebrow">Kitchen Discipline</span>
+          <h2 class="section-title">The Five Golden Rules of Knife Longevity</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">RULE 01</span>
+              <h5 class="font-display">Zero Dishwashers Ever</h5>
+              <p class="small text-secondary mb-0">Caustic dishwasher detergents eat into high-carbon alloys and split wood handles within 3 cycles.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">RULE 02</span>
+              <h5 class="font-display">Soft Hardwood Boards Only</h5>
+              <p class="small text-secondary mb-0">End-grain walnut and cherry absorb blade impact; glass and ceramic butcher your acute edge.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">RULE 03</span>
+              <h5 class="font-display">Towel Dry Immediately</h5>
+              <p class="small text-secondary mb-0">Even stainless steels can develop pit corrosion if allowed to air-dry in puddles on a countertop.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">RULE 04</span>
+              <h5 class="font-display">Hone Regularly, Sharpen Periodically</h5>
+              <p class="small text-secondary mb-0">Honing with a ceramic rod re-aligns microscopic edge teeth weekly; water-stone sharpening removes metal and is needed only every 6&ndash;12 months.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 scroll-reveal">
+            <div class="p-4 bg-subtle border border-subtle h-100">
+              <span class="badge-mono text-brass mb-2 d-block">RULE 05</span>
+              <h5 class="font-display">Proper Tool for the Task</h5>
+              <p class="small text-secondary mb-0">Never use fine chef knives to hack through frozen meat, split beef bones, or pry open containers. Use dedicated meat cleavers for heavy impact tasks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5 scroll-reveal">
+          <a href="care-guide.html" class="btn btn-outline-brass">Explore Detailed Care Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: FINAL SHOP CTA
+         ========================================================================== -->
+    <section class="py-5 bg-subtle border-top border-subtle">
+      <div class="container py-lg-4 text-center scroll-reveal">
+        <span class="section-eyebrow">Invest in Your Craft</span>
+        <h2 class="font-display display-5 mb-3">Experience the Difference in Every Slice.</h2>
+        <p class="text-secondary lead mx-auto mb-4" style="max-width: 600px;">
+          Browse our catalogue of Japanese and European culinary cutlery, built for a lifetime of home and professional cooking.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="products.html" class="btn btn-brass btn-lg-custom">
+            <span>Shop The Knives</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="contact.html" class="btn btn-outline-custom btn-lg-custom">
+            <span>Contact Cutlery Specialists</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-12 col-lg-4">
+          <div class="brand-logo mb-3">
+            <div class="brand-symbol">S</div>
+            <div class="brand-text">
+              <span class="brand-title text-white">STEEL & GRAIN</span>
+              <span class="brand-sub">CULINARY CUTLERY</span>
+            </div>
+          </div>
+          <p class="text-muted pe-lg-4">
+            Specialty kitchen cutlery and precision culinary instruments. Selected for balance, edge longevity, and lifetime culinary performance.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            <a href="https://pinterest.com" class="footer-social-link" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><i class="bi bi-pinterest"></i></a>
+            <a href="https://facebook.com" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Shop -->
+        <div class="col-12 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Culinary Shop</h4>
+          <ul class="footer-nav">
+            <li><a href="products.html?type=chef">Chef Knives</a></li>
+            <li><a href="products.html?type=santoku">Santoku</a></li>
+            <li><a href="products.html?type=paring">Paring Knives</a></li>
+            <li><a href="products.html?type=bread">Bread Knives</a></li>
+            <li><a href="products.html?type=cleaver">Cleavers & Nakiri</a></li>
+            <li><a href="products.html?type=sets">Curated Sets</a></li>
+            <li><a href="products.html?type=accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Expertise -->
+        <div class="col-12 col-md-3 col-lg-3">
+          <h4 class="footer-heading">Knowledge & Care</h4>
+          <ul class="footer-nav">
+            <li><a href="sharpening.html">Sharpening Services</a></li>
+            <li><a href="care-guide.html">Knife Care Guide</a></li>
+            <li><a href="care-details.html">Carbon Steel Maintenance</a></li>
+            <li><a href="our-craft.html">Our Metallurgy & Craft</a></li>
+            <li><a href="collections.html">Collection Overview</a></li>
+            <li><a href="collection-details.html">Japanese Craft Series</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Workshop -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Workshop & Store</h4>
+          <p class="mb-2 text-muted"><i class="bi bi-geo-alt me-2 text-brass"></i> 1482 Artisan Way, Timber District</p>
+          <p class="mb-2 text-muted"><i class="bi bi-envelope me-2 text-brass"></i> studio@steelandgrain.com</p>
+          <p class="mb-3 text-muted"><i class="bi bi-telephone me-2 text-brass"></i> (555) 234-5690</p>
+          <div class="pt-2 border-top border-secondary">
+            <span class="tech-label text-brass d-block mb-1">Hours of Operation</span>
+            <span class="small text-muted d-block">Tuesday &ndash; Saturday: 10:00 AM &ndash; 6:00 PM</span>
+            <span class="small text-muted d-block">Sunday & Monday: Closed for Workshop Service</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="small text-muted">
+          &copy; 2026 STEEL & GRAIN Cutlery Store. All rights reserved. Crafted for culinary performance.
+        </div>
+        <div class="d-flex gap-3 small text-muted">
+          <a href="contact.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="contact.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="care-guide.html">Care Standards</a>
+          <span>&bull;</span>
+          <a href="documentation/index.html">Template Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Overlay -->
+  <div class="lightbox-overlay" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Enlarged view" id="lightboxImage">
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

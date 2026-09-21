@@ -1,0 +1,950 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specialty Cutlery Catalogue - STEEL & GRAIN</title>
+  <meta name="description" content="Explore our complete collection of precision chef knives, Japanese santokus, paring knives, bread knives, cutting boards, and culinary accessories.">
+  <meta name="keywords" content="kitchen knife catalogue, chef knives, santoku, paring knives, bread knife, culinary accessories">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="STEEL & GRAIN - Specialty Cutlery Catalogue">
+  <meta property="og:description" content="Precision chef knives, santokus, paring blades, cleavers, and kitchen accessories.">
+  <meta property="og:image" content="assets/images/chef-knives/artisan-8-chef.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & MANDATORY NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="STEEL & GRAIN Home">
+        <div class="brand-symbol">S</div>
+        <div class="brand-text">
+          <span class="brand-title">STEEL & GRAIN</span>
+          <span class="brand-sub">CULINARY CUTLERY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+        <ul class="desktop-nav">
+          <!-- Home Dropdown -->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link-custom" aria-haspopup="true" aria-expanded="false">
+              Home <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown">
+              <a href="index.html" class="dropdown-link">
+                <span>Home 1 &mdash; Brand Showcase</span>
+                <span class="dropdown-tag">Default</span>
+              </a>
+              <a href="home-2.html" class="dropdown-link">
+                <span>Home 2 &mdash; Inside the Craft</span>
+                <span class="dropdown-tag">Editorial</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link-custom active" aria-haspopup="true" aria-expanded="false">
+              Products <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown dropdown-wide">
+              <a href="products.html?type=chef" class="dropdown-link">
+                <span>Chef Knives</span>
+                <span class="dropdown-tag">6" / 8" / 10"</span>
+              </a>
+              <a href="products.html?type=santoku" class="dropdown-link">
+                <span>Santoku</span>
+                <span class="dropdown-tag">165mm / 180mm</span>
+              </a>
+              <a href="products.html?type=paring" class="dropdown-link">
+                <span>Paring Knives</span>
+                <span class="dropdown-tag">3.5" / 4"</span>
+              </a>
+              <a href="products.html?type=utility" class="dropdown-link">
+                <span>Utility Knives</span>
+                <span class="dropdown-tag">Prep Blades</span>
+              </a>
+              <a href="products.html?type=bread" class="dropdown-link">
+                <span>Bread Knives</span>
+                <span class="dropdown-tag">Serrated</span>
+              </a>
+              <a href="products.html?type=cleaver" class="dropdown-link">
+                <span>Cleavers & Nakiri</span>
+                <span class="dropdown-tag">Vegetable</span>
+              </a>
+              <a href="products.html?type=sets" class="dropdown-link">
+                <span>Knife Sets</span>
+                <span class="dropdown-tag">Curated</span>
+              </a>
+              <a href="products.html?type=accessories" class="dropdown-link">
+                <span>Accessories</span>
+                <span class="dropdown-tag">Boards & Rolls</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="collections.html" class="nav-link-custom">Collections</a></li>
+          <li class="nav-item"><a href="sharpening.html" class="nav-link-custom">Sharpening</a></li>
+          <li class="nav-item"><a href="care-guide.html" class="nav-link-custom">Care Guide</a></li>
+          <li class="nav-item"><a href="our-craft.html" class="nav-link-custom">Our Craft</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme Toggle & Shop Knives CTA -->
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
+
+        <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
+          <span>Shop Knives</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-content-wrap">
+      <div class="mobile-nav-body">
+        <ul class="mobile-nav-list">
+          <!-- Home -->
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+              <span>Home</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="mobile-subnav">
+              <li>
+                <a href="index.html" class="mobile-subnav-link">
+                  <span>Home 1 &mdash; Brand Showcase</span>
+                  <span class="dropdown-tag">Default</span>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="mobile-subnav-link">
+                  <span>Home 2 &mdash; Inside the Craft</span>
+                  <span class="dropdown-tag">Editorial</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
+              <span>Products</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="mobile-subnav">
+              <li>
+                <a href="products.html" class="mobile-subnav-link">
+                  <span>All Products</span>
+                  <span class="dropdown-tag">Overview</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=chef" class="mobile-subnav-link">
+                  <span>Chef Knives</span>
+                  <span class="dropdown-tag">6" / 8" / 10"</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=santoku" class="mobile-subnav-link">
+                  <span>Santoku</span>
+                  <span class="dropdown-tag">165mm / 180mm</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=paring" class="mobile-subnav-link">
+                  <span>Paring Knives</span>
+                  <span class="dropdown-tag">3.5" / 4"</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=utility" class="mobile-subnav-link">
+                  <span>Utility Knives</span>
+                  <span class="dropdown-tag">Prep Blades</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=bread" class="mobile-subnav-link">
+                  <span>Bread Knives</span>
+                  <span class="dropdown-tag">Serrated</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=cleaver" class="mobile-subnav-link">
+                  <span>Cleavers & Nakiri</span>
+                  <span class="dropdown-tag">Vegetable</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=sets" class="mobile-subnav-link">
+                  <span>Knife Sets</span>
+                  <span class="dropdown-tag">Curated</span>
+                </a>
+              </li>
+              <li>
+                <a href="products.html?type=accessories" class="mobile-subnav-link">
+                  <span>Accessories</span>
+                  <span class="dropdown-tag">Boards & Rolls</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="mobile-nav-item"><a href="collections.html" class="mobile-nav-link">Collections</a></li>
+          <li class="mobile-nav-item"><a href="sharpening.html" class="mobile-nav-link">Sharpening</a></li>
+          <li class="mobile-nav-item"><a href="care-guide.html" class="mobile-nav-link">Care Guide</a></li>
+          <li class="mobile-nav-item"><a href="our-craft.html" class="mobile-nav-link">Our Craft</a></li>
+          <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Controls & CTA inside Menu Page -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
+        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <span class="font-mono small text-secondary">Color Theme</span>
+            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </div>
+          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
+          <div class="d-flex align-items-center justify-content-between py-1">
+            <span class="font-mono small text-secondary">Layout Direction</span>
+            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+          </div>
+        </div>
+
+        <a href="products.html" class="btn btn-brass w-100 mb-3">
+          <span>Shop Knives</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PAGE HEADER
+       ========================================================================== -->
+  <section class="py-5 bg-subtle border-bottom border-subtle">
+    <div class="container py-3 text-center">
+      <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+        <ol class="breadcrumb mb-2 font-mono small">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active text-brass" aria-current="page">Catalogue</li>
+        </ol>
+      </nav>
+      <h1 class="font-display display-5 mb-2">Specialty Cutlery Catalogue</h1>
+      <p class="lead text-secondary mb-0 mx-auto" style="max-width: 700px;">
+        Curated kitchen blades, sharpening tools, and cutting surfaces engineered for precise culinary execution.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CATALOGUE CONTENT & FILTERS
+       ========================================================================== -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Filter Sidebar -->
+        <aside class="col-lg-3">
+          <div class="filter-sidebar">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="tech-label text-brass">FILTER CUTLERY</span>
+              <button type="button" class="btn btn-sm btn-link text-muted p-0 font-mono small" id="clearFiltersBtn">Reset All</button>
+            </div>
+
+            <!-- Filter: Product Type -->
+            <div class="filter-group">
+              <div class="filter-title">Blade / Product Type</div>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="chef"> Chef Knives</span>
+                <span class="filter-count">3</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="santoku"> Santoku</span>
+                <span class="filter-count">2</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="paring"> Paring Knives</span>
+                <span class="filter-count">2</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="utility"> Utility Knives</span>
+                <span class="filter-count">2</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="bread"> Bread Knives</span>
+                <span class="filter-count">1</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="cleaver"> Cleavers & Nakiri</span>
+                <span class="filter-count">2</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="sets"> Knife Sets</span>
+                <span class="filter-count">3</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-type" value="accessories"> Accessories</span>
+                <span class="filter-count">5</span>
+              </label>
+            </div>
+
+            <!-- Filter: Steel Type -->
+            <div class="filter-group">
+              <div class="filter-title">Steel Core</div>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-steel" value="vg10"> VG10 Super Core</span>
+                <span class="filter-count">5</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-steel" value="sg2"> SG2 Micro-Powder</span>
+                <span class="filter-count">3</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-steel" value="stainless"> Swedish 14C28N</span>
+                <span class="filter-count">4</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-steel" value="damascus"> 33-Layer Damascus</span>
+                <span class="filter-count">3</span>
+              </label>
+            </div>
+
+            <!-- Filter: Handle Material -->
+            <div class="filter-group">
+              <div class="filter-title">Handle Material</div>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-handle" value="walnut"> American Walnut</span>
+                <span class="filter-count">5</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-handle" value="teak"> Octagonal Teak</span>
+                <span class="filter-count">3</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-handle" value="pakkawood"> Resin Pakkawood</span>
+                <span class="filter-count">4</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="checkbox" class="filter-checkbox filter-handle" value="ebony"> African Ebony</span>
+                <span class="filter-count">3</span>
+              </label>
+            </div>
+
+            <!-- Filter: Price Range -->
+            <div class="filter-group">
+              <div class="filter-title">Price Range</div>
+              <label class="custom-checkbox-label">
+                <span><input type="radio" name="price-range" class="filter-checkbox" value="all" checked> All Prices</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="radio" name="price-range" class="filter-checkbox" value="under-150"> Under $150</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="radio" name="price-range" class="filter-checkbox" value="150-250"> $150 &ndash; $250</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="radio" name="price-range" class="filter-checkbox" value="250-400"> $250 &ndash; $400</span>
+              </label>
+              <label class="custom-checkbox-label">
+                <span><input type="radio" name="price-range" class="filter-checkbox" value="over-400"> Over $400</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid Area -->
+        <div class="col-lg-9">
+          <!-- Toolbar -->
+          <div class="filter-toolbar">
+            <span class="font-mono small text-secondary" id="resultsCount">Showing 20 items</span>
+            <div class="d-flex align-items-center gap-2">
+              <label for="productSortSelect" class="font-mono small text-muted text-uppercase d-none d-sm-inline">Sort by:</label>
+              <select class="sort-select" id="productSortSelect" aria-label="Sort products">
+                <option value="featured">Featured Selection</option>
+                <option value="newest">Newest Additions</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="row g-4" id="productsGridContainer">
+            
+            <!-- 1. 6" Chef -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="chef" data-steel="vg10" data-handle="pakkawood" data-price="195" data-date="202604">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Agile 6"</span>
+                  <img src="assets/images/chef-knives/kanso-6-chef.jpg" alt="Atelier 6 inch Chef Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Chef Knife &bull; 6-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Atelier 6" Chef Knife</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">VG10</span>
+                    <span class="spec-pill">Pakkawood</span>
+                    <span class="spec-pill">155g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$195</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. 8" Chef -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="chef" data-steel="vg10" data-handle="walnut" data-price="240" data-date="202609">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Bestseller</span>
+                  <img src="assets/images/chef-knives/artisan-8-chef.jpg" alt="Artisan 8 inch Chef Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Chef Knife &bull; 8-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Artisan 8" Chef Knife</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">VG10 Core</span>
+                    <span class="spec-pill">Walnut</span>
+                    <span class="spec-pill">195g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$240</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. 10" Chef -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="chef" data-steel="stainless" data-handle="walnut" data-price="275" data-date="202602">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Heavy Prep</span>
+                  <img src="assets/images/chef-knives/pro-10-chef.jpg" alt="Forge Pro 10 inch Chef Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Chef Knife &bull; 10-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Forge Pro 10" Chef</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">14C28N</span>
+                    <span class="spec-pill">Walnut</span>
+                    <span class="spec-pill">245g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$275</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Santoku 165mm -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="santoku" data-steel="sg2" data-handle="teak" data-price="210" data-date="202608">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Wa-Profile</span>
+                  <img src="assets/images/santoku/kanso-santoku-165.jpg" alt="Kanso Santoku 165mm">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Santoku &bull; 165mm</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Kanso Santoku 165mm</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">SG2 Powder</span>
+                    <span class="spec-pill">Teak</span>
+                    <span class="spec-pill">62 HRC</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$210</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Santoku 180mm -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="santoku" data-steel="damascus" data-handle="ebony" data-price="250" data-date="202607">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Scalloped Damascus</span>
+                  <img src="assets/images/santoku/atelier-santoku-180.jpg" alt="Atelier 180mm Damascus Santoku">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Santoku &bull; 180mm</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Atelier Santoku 180mm</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Damascus</span>
+                    <span class="spec-pill">Ebony</span>
+                    <span class="spec-pill">180g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$250</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. 3.5" Paring -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="paring" data-steel="vg10" data-handle="pakkawood" data-price="145" data-date="202603">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Fine Detail</span>
+                  <img src="assets/images/paring/petty-paring-35.jpg" alt="Atelier Petty Knife 3.5 inch">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Paring / Petty &bull; 3.5-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Atelier Petty Knife</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">VG10</span>
+                    <span class="spec-pill">Pakkawood</span>
+                    <span class="spec-pill">75g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$145</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. 4" Paring -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="paring" data-steel="stainless" data-handle="walnut" data-price="155" data-date="202601">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Extended Tip</span>
+                  <img src="assets/images/paring/forge-paring-40.jpg" alt="Forge Precision 4 inch Paring">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Paring Knife &bull; 4-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Forge 4" Paring Knife</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">14C28N</span>
+                    <span class="spec-pill">Walnut</span>
+                    <span class="spec-pill">85g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$155</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Utility Knife -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="utility" data-steel="stainless" data-handle="pakkawood" data-price="165" data-date="202606">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Workhorse</span>
+                  <img src="assets/images/chef-knives/kanso-6-chef.jpg" alt="Forge Prep Utility Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Utility Knife &bull; 5.5-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Forge Prep Utility</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">14C28N</span>
+                    <span class="spec-pill">Pakkawood</span>
+                    <span class="spec-pill">120g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$165</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Prep Knife -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="utility" data-steel="sg2" data-handle="teak" data-price="185" data-date="202605">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Petty Utility</span>
+                  <img src="assets/images/santoku/kanso-santoku-165.jpg" alt="Kanso Precision Prep Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Prep Knife &bull; 5-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Kanso 5" Prep Blade</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">SG2</span>
+                    <span class="spec-pill">Teak</span>
+                    <span class="spec-pill">110g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$185</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Bread Knife -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="bread" data-steel="stainless" data-handle="walnut" data-price="185" data-date="202608">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Wave Edge</span>
+                  <img src="assets/images/bread-knives/heritage-bread-9.jpg" alt="Heritage 9 inch Bread Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Bread Knife &bull; 9-Inch</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Heritage Bread Knife</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">440C Steel</span>
+                    <span class="spec-pill">Walnut</span>
+                    <span class="spec-pill">210g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$185</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11. Vegetable Cleaver -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="cleaver" data-steel="damascus" data-handle="ebony" data-price="195" data-date="202607">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Nakiri Profile</span>
+                  <img src="assets/images/cleavers/vegetable-cleaver.jpg" alt="Professional Nakiri Cleaver">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Nakiri &bull; 165mm</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Professional Nakiri</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Damascus</span>
+                    <span class="spec-pill">Ebony</span>
+                    <span class="spec-pill">225g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$195</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12. Chinese-style Kitchen Cleaver -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="cleaver" data-steel="vg10" data-handle="walnut" data-price="220" data-date="202602">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Broad Slicer</span>
+                  <img src="assets/images/cleavers/heritage-cleaver.jpg" alt="Heritage Chinese-Style Kitchen Cleaver">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Chuka Bocho &bull; 180mm</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Heritage Kitchen Cleaver</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">VG10 Core</span>
+                    <span class="spec-pill">Walnut</span>
+                    <span class="spec-pill">340g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$220</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Blade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 13. Essential Set -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="sets" data-steel="vg10" data-handle="walnut" data-price="420" data-date="202609">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">3-Piece Set</span>
+                  <img src="assets/images/knife-sets/essential-set-3pc.jpg" alt="Essential 3-Piece Knife Set">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Cutlery Set &bull; 3 Knives</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Essential Knife Set</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Chef + Santoku + Paring</span>
+                    <span class="spec-pill">Walnut Box</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$420</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 14. Professional Set -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="sets" data-steel="vg10" data-handle="pakkawood" data-price="680" data-date="202608">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">6-Piece Master</span>
+                  <img src="assets/images/knife-sets/professional-set-6pc.jpg" alt="Professional 6-Piece Knife Set">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Cutlery Set &bull; 6 Pieces</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Professional Line Set</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Magnetic Stand Included</span>
+                    <span class="spec-pill">Honing Steel</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$680</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15. Complete Kitchen Set -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="sets" data-steel="damascus" data-handle="ebony" data-price="950" data-date="202609">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Heirloom Line</span>
+                  <img src="assets/images/knife-sets/complete-kitchen-set.jpg" alt="Complete Kitchen Master Set">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Master Set &bull; 8 Pieces</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Complete Master Set</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Damascus</span>
+                    <span class="spec-pill">Leather Roll</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$950</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 16. Honing Rod -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="accessories" data-steel="stainless" data-handle="walnut" data-price="65" data-date="202603">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <img src="assets/images/accessories/honing-rod.jpg" alt="Ceramic Honing Rod">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Accessory &bull; Alignment</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Ceramic Honing Steel</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">2,000 Grit Ceramic</span>
+                    <span class="spec-pill">Walnut Handle</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$65</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 17. Knife Guard -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="accessories" data-steel="stainless" data-handle="walnut" data-price="35" data-date="202601">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <img src="assets/images/accessories/blade-guards.jpg" alt="Wooden Saya Blade Guard">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Accessory &bull; Protection</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Wooden Blade Saya</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Felt-Lined</span>
+                    <span class="spec-pill">Brass Pin</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$35</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 18. Magnetic Storage -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="accessories" data-steel="stainless" data-handle="walnut" data-price="85" data-date="202604">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <img src="assets/images/accessories/magnetic-strip.jpg" alt="Walnut Magnetic Strip">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Accessory &bull; Wall Mount</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Walnut Magnetic Rack</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">Neodymium Rare-Earth</span>
+                    <span class="spec-pill">18" Length</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$85</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 19. Cutting Board -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="accessories" data-steel="stainless" data-handle="walnut" data-price="180" data-date="202606">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <img src="assets/images/accessories/endgrain-board.jpg" alt="Endgrain Walnut Board">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Accessory &bull; Cutting Surface</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Walnut Butcher Block</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">End-Grain</span>
+                    <span class="spec-pill">16" &times; 12" &times; 2"</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$180</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 20. Knife Roll -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="accessories" data-steel="stainless" data-handle="walnut" data-price="130" data-date="202605">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <img src="assets/images/accessories/leather-roll.jpg" alt="Canvas and Leather Knife Roll">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Accessory &bull; Travel</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Waxed Canvas Knife Roll</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">8 Blade Slots</span>
+                    <span class="spec-pill">Full-Grain Trim</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$130</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-12 col-lg-4">
+          <div class="brand-logo mb-3">
+            <div class="brand-symbol">S</div>
+            <div class="brand-text">
+              <span class="brand-title text-white">STEEL & GRAIN</span>
+              <span class="brand-sub">CULINARY CUTLERY</span>
+            </div>
+          </div>
+          <p class="text-muted pe-lg-4">
+            Specialty kitchen cutlery and precision culinary instruments. Selected for balance, edge longevity, and lifetime culinary performance.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            <a href="https://pinterest.com" class="footer-social-link" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><i class="bi bi-pinterest"></i></a>
+            <a href="https://facebook.com" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Shop -->
+        <div class="col-12 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Culinary Shop</h4>
+          <ul class="footer-nav">
+            <li><a href="products.html?type=chef">Chef Knives</a></li>
+            <li><a href="products.html?type=santoku">Santoku</a></li>
+            <li><a href="products.html?type=paring">Paring Knives</a></li>
+            <li><a href="products.html?type=bread">Bread Knives</a></li>
+            <li><a href="products.html?type=cleaver">Cleavers & Nakiri</a></li>
+            <li><a href="products.html?type=sets">Curated Sets</a></li>
+            <li><a href="products.html?type=accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Expertise -->
+        <div class="col-12 col-md-3 col-lg-3">
+          <h4 class="footer-heading">Knowledge & Care</h4>
+          <ul class="footer-nav">
+            <li><a href="sharpening.html">Sharpening Services</a></li>
+            <li><a href="care-guide.html">Knife Care Guide</a></li>
+            <li><a href="care-details.html">Carbon Steel Maintenance</a></li>
+            <li><a href="our-craft.html">Our Metallurgy & Craft</a></li>
+            <li><a href="collections.html">Collection Overview</a></li>
+            <li><a href="collection-details.html">Japanese Craft Series</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Workshop -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Workshop & Store</h4>
+          <p class="mb-2 text-muted"><i class="bi bi-geo-alt me-2 text-brass"></i> 1482 Artisan Way, Timber District</p>
+          <p class="mb-2 text-muted"><i class="bi bi-envelope me-2 text-brass"></i> studio@steelandgrain.com</p>
+          <p class="mb-3 text-muted"><i class="bi bi-telephone me-2 text-brass"></i> (555) 234-5690</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="small text-muted">
+          &copy; 2026 STEEL & GRAIN Cutlery Store. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 small text-muted">
+          <a href="contact.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="contact.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="care-guide.html">Care Standards</a>
+          <span>&bull;</span>
+          <a href="documentation/index.html">Template Documentation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
