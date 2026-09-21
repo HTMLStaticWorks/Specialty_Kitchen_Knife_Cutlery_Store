@@ -70,8 +70,8 @@
   --bg-overlay: rgba(5, 6, 8, 0.85);
 
   --text-primary: #F7F5F0;
-  --text-secondary: #B0B3B8;
-  --text-muted: #7A7D84;
+  --text-secondary: #B8BCC4;
+  --text-muted: #9DA3AC;
   --text-inverse: #1C1E21;
 
   --accent-brass: #D4B26F;
@@ -192,6 +192,21 @@ img, video {
 .bg-subtle { background-color: var(--bg-secondary) !important; }
 .bg-surface { background-color: var(--bg-surface) !important; }
 .bg-card-custom { background-color: var(--bg-card) !important; }
+
+/* Text utility overrides for robust theme contrast */
+.text-muted { color: var(--text-muted) !important; }
+.text-secondary { color: var(--text-secondary) !important; }
+.text-primary { color: var(--text-primary) !important; }
+
+.form-privacy-note {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+[data-theme="dark"] .form-privacy-note {
+  color: #B8BCC4 !important;
+}
 
 /* Hairline dividers & borders */
 .border-subtle { border-color: var(--border-color) !important; }
