@@ -37,7 +37,7 @@
         </div>
       </a>
 
-      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+      <nav class="d-none d-xl-block" aria-label="Main Navigation">
         <ul class="desktop-nav">
           <li class="nav-item">
             <a href="index.html" class="nav-link-custom" aria-haspopup="true" aria-expanded="false">
@@ -110,7 +110,7 @@
         <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
 
         <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
-          <span>Shop Knives</span>
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
 
@@ -121,7 +121,6 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobileNavDrawer">
     <div class="mobile-nav-content-wrap">
@@ -221,40 +220,30 @@
         </ul>
       </div>
 
-      <!-- Controls & CTA inside Menu Page -->
-      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
-        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Color Theme</span>
-            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
-              <i class="bi bi-moon-stars"></i>
-            </button>
-          </div>
-          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Layout Direction</span>
-            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
-          </div>
-        </div>
-
-        <a href="products.html" class="btn btn-brass w-100 mb-3">
-          <span>Shop Knives</span>
+      <!-- Navbar Actions inside Menu Drawer (Exact same as Navbar, not extra) -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="products.html" class="btn btn-brass flex-grow-1">
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
-        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
       </div>
     </div>
   </div>
 
   <!-- ==========================================================================
-       HERO SECTION
+       STANDARDIZED PAGE HERO WITH RELEVANT SHARPENING BACKGROUND
        ========================================================================== -->
-  <section class="py-5 bg-card-custom border-bottom border-subtle">
-    <div class="container py-lg-4 text-center">
-
-      <span class="badge-mono text-brass mb-2 d-block">STUDIO WORKSHOP SERVICE</span>
-      <h1 class="font-display display-4 mb-3">Keep the Edge. Respect the Craft.</h1>
-      <p class="lead text-secondary mb-0 mx-auto" style="max-width: 780px;">
+  <section class="page-hero">
+    <img src="assets/images/sharpening/whetstone-sharpening.jpg" alt="Master artisan whetstone sharpening" class="page-hero-bg">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-badge"><i class="bi bi-droplet-half"></i> Studio Workshop Service</span>
+      <h1 class="font-display">Keep the Edge. Respect the Craft.</h1>
+      <p class="lead">
         A premium kitchen blade is only as good as its apex. We provide precision water-stone sharpening and restoration without the destructive friction heat of motorized grinders.
       </p>
     </div>
@@ -274,7 +263,8 @@
       <div class="row g-4">
         <!-- 1. Inspection -->
         <div class="col-md-6 col-lg-3">
-          <div class="p-4 bg-card-custom border border-subtle h-100">
+          <div class="p-4 bg-card-custom border border-subtle h-100 d-flex flex-column">
+            <img src="assets/images/craftsmanship/edge-inspection.jpg" alt="Optical edge inspection under loupe" class="rounded mb-3 w-100" style="height: 160px; object-fit: cover;">
             <span class="craft-step-num d-block mb-2">01</span>
             <h4 class="font-display">Intake & Inspection</h4>
             <p class="small text-secondary mb-0">
@@ -285,7 +275,8 @@
 
         <!-- 2. Sharpening -->
         <div class="col-md-6 col-lg-3">
-          <div class="p-4 bg-card-custom border border-subtle h-100">
+          <div class="p-4 bg-card-custom border border-subtle h-100 d-flex flex-column">
+            <img src="assets/images/craftsmanship/grinding.jpg" alt="Water-cooled ceramic primary sharpening" class="rounded mb-3 w-100" style="height: 160px; object-fit: cover;">
             <span class="craft-step-num d-block mb-2">02</span>
             <h4 class="font-display">Primary Sharpening</h4>
             <p class="small text-secondary mb-0">
@@ -296,7 +287,8 @@
 
         <!-- 3. Honing -->
         <div class="col-md-6 col-lg-3">
-          <div class="p-4 bg-card-custom border border-subtle h-100">
+          <div class="p-4 bg-card-custom border border-subtle h-100 d-flex flex-column">
+            <img src="assets/images/sharpening/whetstone-sharpening.jpg" alt="Progressive water stone honing" class="rounded mb-3 w-100" style="height: 160px; object-fit: cover;">
             <span class="craft-step-num d-block mb-2">03</span>
             <h4 class="font-display">Progressive Honing</h4>
             <p class="small text-secondary mb-0">
@@ -307,7 +299,8 @@
 
         <!-- 4. Final Inspection -->
         <div class="col-md-6 col-lg-3">
-          <div class="p-4 bg-card-custom border border-subtle h-100">
+          <div class="p-4 bg-card-custom border border-subtle h-100 d-flex flex-column">
+            <img src="assets/images/sharpening/leather-strop.jpg" alt="Diamond stropping and preservation" class="rounded mb-3 w-100" style="height: 160px; object-fit: cover;">
             <span class="craft-step-num d-block mb-2">04</span>
             <h4 class="font-display">Test & Preservation</h4>
             <p class="small text-secondary mb-0">

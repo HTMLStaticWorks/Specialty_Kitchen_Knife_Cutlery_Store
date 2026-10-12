@@ -37,8 +37,8 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+      <!-- Desktop Navigation (Switches to Hamburger at 1024px) -->
+      <nav class="d-none d-xl-block" aria-label="Main Navigation">
         <ul class="desktop-nav">
           <!-- Home Dropdown -->
           <li class="nav-item">
@@ -57,45 +57,9 @@
             </div>
           </li>
 
-          <!-- Products Dropdown -->
+          <!-- Products (Dropdown Removed on Products Page) -->
           <li class="nav-item">
-            <a href="products.html" class="nav-link-custom active" aria-haspopup="true" aria-expanded="false">
-              Products <i class="bi bi-chevron-down"></i>
-            </a>
-            <div class="nav-dropdown dropdown-wide">
-              <a href="products.html?type=chef" class="dropdown-link">
-                <span>Chef Knives</span>
-                <span class="dropdown-tag">6" / 8" / 10"</span>
-              </a>
-              <a href="products.html?type=santoku" class="dropdown-link">
-                <span>Santoku</span>
-                <span class="dropdown-tag">165mm / 180mm</span>
-              </a>
-              <a href="products.html?type=paring" class="dropdown-link">
-                <span>Paring Knives</span>
-                <span class="dropdown-tag">3.5" / 4"</span>
-              </a>
-              <a href="products.html?type=utility" class="dropdown-link">
-                <span>Utility Knives</span>
-                <span class="dropdown-tag">Prep Blades</span>
-              </a>
-              <a href="products.html?type=bread" class="dropdown-link">
-                <span>Bread Knives</span>
-                <span class="dropdown-tag">Serrated</span>
-              </a>
-              <a href="products.html?type=cleaver" class="dropdown-link">
-                <span>Cleavers & Nakiri</span>
-                <span class="dropdown-tag">Vegetable</span>
-              </a>
-              <a href="products.html?type=sets" class="dropdown-link">
-                <span>Knife Sets</span>
-                <span class="dropdown-tag">Curated</span>
-              </a>
-              <a href="products.html?type=accessories" class="dropdown-link">
-                <span>Accessories</span>
-                <span class="dropdown-tag">Boards & Rolls</span>
-              </a>
-            </div>
+            <a href="products.html" class="nav-link-custom active">Products</a>
           </li>
 
           <li class="nav-item"><a href="collections.html" class="nav-link-custom">Collections</a></li>
@@ -114,7 +78,7 @@
         <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
 
         <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
-          <span>Shop Knives</span>
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
 
@@ -225,39 +189,31 @@
         </ul>
       </div>
 
-      <!-- Controls & CTA inside Menu Page -->
-      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
-        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Color Theme</span>
-            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
-              <i class="bi bi-moon-stars"></i>
-            </button>
-          </div>
-          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Layout Direction</span>
-            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
-          </div>
-        </div>
-
-        <a href="products.html" class="btn btn-brass w-100 mb-3">
-          <span>Shop Knives</span>
+      <!-- Navbar Actions inside Menu Drawer (Exact same as Navbar, not extra) -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="products.html" class="btn btn-brass flex-grow-1">
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
-        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
       </div>
     </div>
   </div>
 
   <!-- ==========================================================================
-       PAGE HEADER
+       STANDARDIZED PAGE HERO WITH RELEVANT KNIFE BACKGROUND
        ========================================================================== -->
-  <section class="py-5 bg-subtle border-bottom border-subtle">
-    <div class="container py-3 text-center">
-      <h1 class="font-display display-5 mb-2">Specialty Cutlery Catalogue</h1>
-      <p class="lead text-secondary mb-0 mx-auto" style="max-width: 700px;">
-        Curated kitchen blades, sharpening tools, and cutting surfaces engineered for precise culinary execution.
+  <section class="page-hero">
+    <img src="assets/images/hero/hero-2.jpg" alt="Specialty Cutlery Lineup" class="page-hero-bg">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-badge"><i class="bi bi-shield-check"></i> Master Cutlery Catalogue</span>
+      <h1 class="font-display">Specialty Kitchen Knives & Cutlery</h1>
+      <p class="lead">
+        Hand-selected Japanese and European kitchen blades, sharpening tools, and cutting surfaces engineered for precise culinary execution.
       </p>
     </div>
   </section>
@@ -381,7 +337,7 @@
         <div class="col-lg-9">
           <!-- Toolbar -->
           <div class="filter-toolbar">
-            <span class="font-mono small text-secondary" id="resultsCount">Showing 20 items</span>
+            <span class="font-mono small text-secondary" id="resultsCount">Showing 21 items</span>
             <div class="d-flex align-items-center gap-2">
               <label for="productSortSelect" class="font-mono small text-muted text-uppercase d-none d-sm-inline">Sort by:</label>
               <select class="sort-select" id="productSortSelect" aria-label="Sort products">
@@ -837,7 +793,30 @@
                   </div>
                   <div class="knife-card-footer">
                     <span class="knife-price">$130</span>
-                    <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">Details</a>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-brass">Buy Knife</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 21. Sujihiki Slicer (Balances the 3-column grid: 21 items = 7 full rows) -->
+            <div class="col-md-6 col-xl-4 product-item-col" data-type="chef" data-steel="vg10" data-handle="walnut" data-price="275" data-date="202606">
+              <div class="knife-card">
+                <div class="knife-card-media">
+                  <span class="knife-card-badge">Precision 240mm</span>
+                  <img src="assets/images/chef-knives/artisan-8-chef.jpg" alt="Atelier Sujihiki Slicing Knife">
+                </div>
+                <div class="knife-card-body">
+                  <span class="knife-card-type">Chef Knife &bull; Sujihiki 240mm</span>
+                  <h3 class="knife-card-title"><a href="product-details.html">Atelier 240mm Slicing Knife</a></h3>
+                  <div class="knife-card-specs">
+                    <span class="spec-pill">VG-10 Core</span>
+                    <span class="spec-pill">American Walnut</span>
+                    <span class="spec-pill">180g</span>
+                  </div>
+                  <div class="knife-card-footer">
+                    <span class="knife-price">$275</span>
+                    <a href="product-details.html" class="btn btn-sm-custom btn-brass">Buy Knife</a>
                   </div>
                 </div>
               </div>

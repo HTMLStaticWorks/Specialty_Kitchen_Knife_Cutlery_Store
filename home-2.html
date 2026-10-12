@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -38,8 +38,8 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+      <!-- Desktop Navigation (Switches to Hamburger at 1024px) -->
+      <nav class="d-none d-xl-block" aria-label="Main Navigation">
         <ul class="desktop-nav">
           <!-- Home Dropdown -->
           <li class="nav-item">
@@ -107,7 +107,7 @@
         </ul>
       </nav>
 
-      <!-- Actions: Theme Toggle & Shop Knives CTA -->
+      <!-- Actions: Theme Toggle, RTL & Primary CTA -->
       <div class="header-actions">
         <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
           <i class="bi bi-moon-stars"></i>
@@ -115,7 +115,7 @@
         <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
 
         <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
-          <span>Shop Knives</span>
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
 
@@ -226,81 +226,127 @@
         </ul>
       </div>
 
-      <!-- Controls & CTA inside Menu Page -->
-      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
-        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Color Theme</span>
-            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
-              <i class="bi bi-moon-stars"></i>
-            </button>
-          </div>
-          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Layout Direction</span>
-            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
-          </div>
-        </div>
-
-        <a href="products.html" class="btn btn-brass w-100 mb-3">
-          <span>Shop Knives</span>
+      <!-- Navbar Actions inside Menu Drawer (Exact same as Navbar, not extra) -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="products.html" class="btn btn-brass flex-grow-1">
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
-        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
       </div>
     </div>
   </div>
 
   <main>
     <!-- ==========================================================================
-         SECTION 1: SPLIT-SCREEN EDITORIAL HERO
+         SECTION 1: DISTINCT ATELIER MASTER WORKSHOP HERO SHOWCASE
+         Redesigned with distinctive visual structure, specs matrix & CTAs
          ========================================================================== -->
-    <section class="hero-split">
-      <div class="hero-split-left hero-fade">
-        <div class="d-inline-flex align-items-center gap-2 mb-3">
-          <span class="badge-mono text-brass">CRAFT ESSAY &bull; ISSUE 04</span>
-          <span class="text-muted">&bull;</span>
-          <span class="tech-label text-muted">METALLURGY & KINEMATICS</span>
-        </div>
-        <h1 class="font-display display-3 mb-4">Precision Begins Before the First Cut.</h1>
-        <p class="lead text-secondary mb-4">
-          Great cooking is an accumulation of micro-decisions: the temperature of a pan, the grain direction of a protein, and the thickness of a vegetable dice. The instrument in your hand should never compromise that clarity.
-        </p>
-        <div class="d-flex flex-wrap gap-3">
-          <a href="#metallurgy" class="btn btn-brass">
-            <span>Explore Metallurgy</span>
-            <i class="bi bi-arrow-down"></i>
-          </a>
-          <a href="products.html" class="btn btn-outline-custom">
-            <span>Shop The Blades</span>
-          </a>
-        </div>
-
-        <div class="mt-5 pt-4 border-top border-subtle d-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem;">
-          <div>
-            <span class="tech-label text-muted d-block">BEVEL RATIO</span>
-            <span class="font-mono fw-bold fs-5 text-brass">50/50 Dual</span>
+    <section class="hero-atelier">
+      <img src="assets/images/craftsmanship/forging.jpg" alt="Master Bladesmith Forging Studio" class="hero-atelier-bg">
+      <div class="hero-atelier-overlay"></div>
+      
+      <div class="container position-relative py-lg-4" style="z-index: 3;">
+        <!-- Editorial Masthead Header -->
+        <div class="text-center max-w-760 mx-auto mb-5 hero-fade">
+          <div class="d-inline-flex align-items-center gap-2 mb-3">
+            <span class="page-hero-badge"><i class="bi bi-fire text-brass"></i> CRAFT ESSAY &bull; ISSUE 04 &bull; INSIDE THE ATELIER</span>
           </div>
-          <div>
-            <span class="tech-label text-muted d-block">ROCKWELL</span>
-            <span class="font-mono fw-bold fs-5 text-brass">61.5 HRC</span>
-          </div>
-          <div>
-            <span class="tech-label text-muted d-block">TAPER</span>
-            <span class="font-mono fw-bold fs-5 text-brass">2.2mm &rarr; 0.6mm</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-split-right hero-fade">
-        <img src="assets/images/hero/hero-split.jpg" alt="Artisan kitchen prep and precision cutting blade" data-lightbox-trigger>
-        <div class="split-overlay-card">
-          <span class="badge-mono text-brass d-block mb-1">MACRO ARCHITECTURE</span>
-          <h4 class="font-display mb-1 text-white">Full Distal Taper & Convex Grind</h4>
-          <p class="small text-white-50 mb-0">
-            Tapering from spine to apex ensures effortless lateral release, preventing dense starches like potatoes and squash from vacuum-suctioning to the blade face.
+          <h1 class="font-display display-4 text-white mb-3">Precision Begins Before the First Cut.</h1>
+          <p class="lead text-white-50 mx-auto" style="max-width: 720px;">
+            Inside our forge and sharpening studio. Every convex grind, vacuum temper cycle, and hand-honed apex is engineered for chefs who measure culinary precision in microns.
           </p>
+          <div class="hero-cta-group d-flex justify-content-center flex-wrap gap-3 mt-4">
+            <a href="products.html" class="btn btn-brass btn-lg-custom">
+              <span>Shop Now</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="products.html?type=chef" class="btn btn-charcoal btn-lg-custom">
+              <span>Buy Knife</span>
+              <i class="bi bi-shield-check"></i>
+            </a>
+            <a href="#metallurgy" class="btn btn-outline-custom btn-lg-custom text-white border-subtle">
+              <span>Explore Metallurgy</span>
+              <i class="bi bi-arrow-down"></i>
+            </a>
+          </div>
         </div>
+
+        <!-- 3-Column Editorial Atelier Grid -->
+        <div class="row g-4 align-items-stretch hero-fade">
+          <!-- Col 1: Forged Geometry Card -->
+          <div class="col-lg-4">
+            <div class="hero-atelier-card d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge-mono text-brass mb-2 d-block">FORGED GEOMETRY</span>
+                <h3 class="font-display text-white mb-3">50/50 Dual Convex Grind</h3>
+                <p class="small text-white-50 mb-3">
+                  Our Hamaguri grinds taper smoothly from a 2.2mm spine down to 0.6mm at the apex. This curved geometry breaks surface adhesion so potatoes, garlic, and fish release effortlessly without vacuum cling.
+                </p>
+              </div>
+              <div class="pt-3 border-top border-subtle">
+                <div class="d-flex justify-content-between py-1 small font-mono">
+                  <span class="text-white-50">Distal Taper</span>
+                  <span class="text-brass fw-bold">2.2mm &rarr; 0.6mm</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 small font-mono">
+                  <span class="text-white-50">Bevel Ratio</span>
+                  <span class="text-brass fw-bold">50 / 50 Dual</span>
+                </div>
+                <div class="d-flex justify-content-between py-1 small font-mono">
+                  <span class="text-white-50">Apex Honing</span>
+                  <span class="text-brass fw-bold">15&deg; Water Stone</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Center Visual Showcase Frame -->
+          <div class="col-lg-4">
+            <div class="hero-atelier-visual">
+              <img src="assets/images/craftsmanship/grinding.jpg" alt="Artisan water-wheel blade edge grinding" data-lightbox-trigger>
+              <div class="split-overlay-card">
+                <span class="badge-mono text-brass d-block mb-1">STUDIO WORKBENCH</span>
+                <h5 class="font-display mb-1 text-white">Cold Water-Bath Grinding</h5>
+                <p class="small text-white-50 mb-0">
+                  Preserving molecular temper by eliminating thermal friction during apex formation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 3: Steel & Hardness Card -->
+          <div class="col-lg-4">
+            <div class="hero-atelier-card d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge-mono text-brass mb-2 d-block">METALLURGY TEMPER</span>
+                <h3 class="font-display text-white mb-3">SG2 & High-Carbon VG10</h3>
+                <p class="small text-white-50 mb-3">
+                  Cryogenically treated down to -196&deg;C to transform retained austenite into uniform martensite. Retains acute edges 4&times; longer than commercial cutlery.
+                </p>
+              </div>
+              <div>
+                <div class="p-3 bg-secondary rounded mb-3 border border-subtle">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="font-mono small text-secondary">Rockwell Hardness</span>
+                    <span class="font-mono fw-bold text-brass">61.5 &ndash; 63 HRC</span>
+                  </div>
+                  <div class="progress" style="height: 4px; background: rgba(255,255,255,0.1);">
+                    <div class="progress-bar bg-brass" style="width: 88%;"></div>
+                  </div>
+                </div>
+                <a href="products.html" class="btn btn-brass w-100">
+                  <span>Buy Knife &mdash; View Store</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -726,14 +772,14 @@
     <!-- ==========================================================================
          SECTION 10: FINAL SHOP CTA
          ========================================================================== -->
-    <section class="py-5 bg-subtle border-top border-subtle">
+    <section class="final-cta-section py-5 bg-subtle border-top border-subtle">
       <div class="container py-lg-4 text-center scroll-reveal">
         <span class="section-eyebrow">Invest in Your Craft</span>
         <h2 class="font-display display-5 mb-3">Experience the Difference in Every Slice.</h2>
         <p class="text-secondary lead mx-auto mb-4" style="max-width: 600px;">
           Browse our catalogue of Japanese and European culinary cutlery, built for a lifetime of home and professional cooking.
         </p>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
+        <div class="above-footer-cta-group d-flex flex-wrap justify-content-center gap-3">
           <a href="products.html" class="btn btn-brass btn-lg-custom">
             <span>Shop The Knives</span>
             <i class="bi bi-arrow-right"></i>

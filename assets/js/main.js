@@ -98,7 +98,7 @@ function initStickyHeader() {
   if (!header) return;
 
   const onScroll = () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 15) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');

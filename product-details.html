@@ -37,8 +37,8 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+      <!-- Desktop Navigation (Switches to Hamburger at 1024px) -->
+      <nav class="d-none d-xl-block" aria-label="Main Navigation">
         <ul class="desktop-nav">
           <li class="nav-item">
             <a href="index.html" class="nav-link-custom" aria-haspopup="true" aria-expanded="false">
@@ -112,7 +112,7 @@
         <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
 
         <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
-          <span>Shop Knives</span>
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
 
@@ -222,27 +222,16 @@
         </ul>
       </div>
 
-      <!-- Controls & CTA inside Menu Page -->
-      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
-        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Color Theme</span>
-            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
-              <i class="bi bi-moon-stars"></i>
-            </button>
-          </div>
-          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Layout Direction</span>
-            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
-          </div>
-        </div>
-
-        <a href="products.html" class="btn btn-brass w-100 mb-3">
-          <span>Shop Knives</span>
+      <!-- Navbar Actions inside Menu Drawer (Exact same as Navbar, not extra) -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="products.html" class="btn btn-brass flex-grow-1">
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
-        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
       </div>
     </div>
   </div>

@@ -43,8 +43,8 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="d-none d-lg-block" aria-label="Main Navigation">
+      <!-- Desktop Navigation (Switches to Hamburger at 1024px) -->
+      <nav class="d-none d-xl-block" aria-label="Main Navigation">
         <ul class="desktop-nav">
           <!-- Home Dropdown -->
           <li class="nav-item">
@@ -112,7 +112,7 @@
         </ul>
       </nav>
 
-      <!-- Actions: Theme Toggle & Shop Knives CTA -->
+      <!-- Actions: Theme Toggle, RTL & Primary CTA -->
       <div class="header-actions">
         <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
           <i class="bi bi-moon-stars"></i>
@@ -120,7 +120,7 @@
         <button type="button" class="rtl-toggle-btn" id="rtlToggle" aria-label="Toggle RTL/LTR Direction">RTL</button>
 
         <a href="products.html" class="btn btn-brass d-none d-sm-inline-flex">
-          <span>Shop Knives</span>
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
 
@@ -232,27 +232,16 @@
         </ul>
       </div>
 
-      <!-- Controls & CTA inside Menu Page -->
-      <div class="mobile-drawer-footer pt-4 border-top border-subtle">
-        <div class="drawer-controls-box mb-3 p-3 bg-subtle rounded border border-subtle">
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Color Theme</span>
-            <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
-              <i class="bi bi-moon-stars"></i>
-            </button>
-          </div>
-          <div class="divider-fine my-2" style="margin: 0.5rem 0 !important;"></div>
-          <div class="d-flex align-items-center justify-content-between py-1">
-            <span class="font-mono small text-secondary">Layout Direction</span>
-            <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
-          </div>
-        </div>
-
-        <a href="products.html" class="btn btn-brass w-100 mb-3">
-          <span>Shop Knives</span>
+      <!-- Navbar Actions inside Menu Drawer (Exact same as Navbar, not extra) -->
+      <div class="mobile-drawer-footer pt-4 border-top border-subtle d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="products.html" class="btn btn-brass flex-grow-1">
+          <span>Shop Now</span>
           <i class="bi bi-arrow-right"></i>
         </a>
-        <p class="tech-label text-muted text-center mb-0">STEEL & GRAIN &mdash; EST. 2018</p>
       </div>
     </div>
   </div>
@@ -276,13 +265,13 @@
               Specialty kitchen knives selected for precision, balance, craftsmanship, and everyday culinary
               performance. Designed for the hands that prepare food with purpose.
             </p>
-            <div class="d-flex flex-wrap gap-3">
+            <div class="hero-cta-group d-flex flex-wrap gap-3">
               <a href="products.html" class="btn btn-brass btn-lg-custom">
-                <span>Explore Knives</span>
+                <span>Shop Now</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
-              <a href="our-craft.html" class="btn btn-outline-custom btn-lg-custom">
-                <span>Discover Our Craft</span>
+              <a href="products.html?type=chef" class="btn btn-outline-custom btn-lg-custom">
+                <span>Buy Knife</span>
               </a>
             </div>
             <div class="mt-5 pt-3 border-top border-subtle d-flex gap-4">
@@ -328,9 +317,8 @@
             <div class="collection-card-lg">
               <img src="assets/images/santoku/atelier-santoku-180.jpg" alt="Japanese Craft culinary knife line">
               <div class="collection-card-overlay">
-                <span class="badge-mono text-brass mb-2">PRECISION APEX</span>
                 <h3>Japanese Craft</h3>
-                <p>Ultra-thin grinds and high-carbon powder steel engineered for pristine ingredient slicing and minimal
+                <p>Ultra-thin grinds and high-carbon powder steel engineered for pristine ingredient minimal
                   cell tearing.</p>
                 <a href="collection-details.html" class="link-arrow">Explore Series <i
                     class="bi bi-arrow-right"></i></a>
@@ -342,7 +330,6 @@
             <div class="collection-card-lg">
               <img src="assets/images/chef-knives/pro-10-chef.jpg" alt="Professional Chef cutlery series">
               <div class="collection-card-overlay">
-                <span class="badge-mono text-brass mb-2">ENDURANCE LINE</span>
                 <h3>Professional Chef</h3>
                 <p>Robust European bolsters, forgiving bevels, and balanced heft crafted for multi-hour line prep and
                   dense produce.</p>
@@ -355,8 +342,7 @@
             <div class="collection-card-lg">
               <img src="assets/images/chef-knives/kanso-6-chef.jpg" alt="Everyday Essentials cutlery">
               <div class="collection-card-overlay">
-                <span class="badge-mono text-brass mb-2">HOME MASTERY</span>
-                <h3>Everyday Essentials</h3>
+                <h3> Essentials</h3>
                 <p>Versatile, low-maintenance kitchen workhorses balanced for home cooks demanding commercial-grade
                   precision.</p>
                 <a href="collections.html" class="link-arrow">Explore Series <i class="bi bi-arrow-right"></i></a>
@@ -368,7 +354,6 @@
             <div class="collection-card-lg">
               <img src="assets/images/cleavers/heritage-cleaver.jpg" alt="Heritage Cutlery collection">
               <div class="collection-card-overlay">
-                <span class="badge-mono text-brass mb-2">HERITAGE FORGE</span>
                 <h3>Heritage Cutlery</h3>
                 <p>Traditional silhouettes shaped from hammered Damascus billets paired with oil-finished native walnut
                   handles.</p>
@@ -418,7 +403,7 @@
                 </p>
                 <div class="knife-card-footer">
                   <span class="knife-price">$240</span>
-                  <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Product</a>
+                  <a href="product-details.html" class="btn btn-sm-custom btn-brass">Buy Knife</a>
                 </div>
               </div>
             </div>
@@ -445,7 +430,7 @@
                 </p>
                 <div class="knife-card-footer">
                   <span class="knife-price">$210</span>
-                  <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Product</a>
+                  <a href="product-details.html" class="btn btn-sm-custom btn-brass">Buy Knife</a>
                 </div>
               </div>
             </div>
@@ -472,7 +457,7 @@
                 </p>
                 <div class="knife-card-footer">
                   <span class="knife-price">$145</span>
-                  <a href="product-details.html" class="btn btn-sm-custom btn-outline-brass">View Product</a>
+                  <a href="product-details.html" class="btn btn-sm-custom btn-brass">Buy Knife</a>
                 </div>
               </div>
             </div>
@@ -697,8 +682,7 @@
               </p>
             </div>
             <div class="craft-step-media">
-              <img src="assets/images/sharpening/leather-strop.jpg"
-                alt="Diamond compound leather strop polishing">
+              <img src="assets/images/sharpening/leather-strop.jpg" alt="Diamond compound leather strop polishing">
             </div>
           </div>
 
@@ -1002,7 +986,7 @@
     <!-- ==========================================================================
          FINAL CTA BANNER
          ========================================================================== -->
-    <section class="py-5 bg-card-custom border-top border-bottom border-subtle">
+    <section class="final-cta-section py-5 bg-card-custom border-top border-bottom border-subtle">
       <div class="container py-lg-4 text-center scroll-reveal">
         <span class="section-eyebrow">Begin Your Selection</span>
         <h2 class="font-display display-5 mb-3">Find the Knife That Belongs in Your Kitchen.</h2>
@@ -1010,7 +994,7 @@
           Whether you are preparing nightly family meals or refining complex culinary techniques, our cutlery
           specialists are here to guide your steel selection.
         </p>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
+        <div class="above-footer-cta-group d-flex flex-wrap justify-content-center gap-3">
           <a href="collections.html" class="btn btn-brass btn-lg-custom">
             <span>Shop Collections</span>
             <i class="bi bi-arrow-right"></i>
